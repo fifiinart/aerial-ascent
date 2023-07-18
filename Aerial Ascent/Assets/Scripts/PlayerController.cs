@@ -26,12 +26,12 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void Walk(float speed)
+    private void Walk(float inputX)
     {
-        rb.velocity = new Vector2(speed * speed, rb.velocity.y);
+        rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
 
-        anim.SetFloat("SpeedX", Mathf.Abs(speed));
-        RotatePlayer(speed);
+        anim.SetFloat("SpeedX", Mathf.Abs(inputX));
+        RotatePlayer(inputX);
     }
 
     private void RotatePlayer(float x)
