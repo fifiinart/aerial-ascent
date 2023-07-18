@@ -15,17 +15,28 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public float speed = 10f;
     public float defaultGravity = 3f;
-    public float horizontalDamping;
+    [Range(0, 1)]
+    public float horizontalDamping = .5f;
+    [Range(0, 1)]
+    public float stoppedDamping = .5f;
+    [Range(0, 1)]
+    public float turningDamping = .5f;
 
     [Header("Jump")]
     public float jumpForce = 10f;
-    public float fallGravityMultiplier = 2.5f;
-    public float variableJumpGravityMultiplier = 2f;
+    [Range(0, 1)]
+    public float cutJumpHeight = .5f;
     public bool onGround = false;
+
+    [Header("Jump Leniency")]
+    public float jumpBufferTime = .25f;
+    private float jumpBufferTimer = 0f;
+    public float coyoteTime = .25f;
+    private float coyoteTimer = 0f;
 
     [Header("Ground Check")]
     public float groundCheckRadius = 0.2f;
-    public LayerMask mask;
+    public LayerMask groundMask;
 
     // Start is called before the first frame update
     void Start()
@@ -35,13 +46,20 @@ public class PlayerController : MonoBehaviour
         grappleController = GetComponent<Grappling>();
     }
 
-    private void CalculateXVel(float inputX)
+    private float CalculateXVel(float inputX)
     {
         float momentum = rb.velocity.x;
         momentum += inputX;
-        momentum *= Mathf.Pow(1f - horizontalDamping, Time.deltaTime * 10f);
-        rb.velocity = new Vector2(momentum, rb.velocity.y);
-    }   
+        momentum *= Mathf.Pow(1f - GetCorrectDamping(inputX, momentum), Time.deltaTime * 10f);
+        return momentum;
+    }
+
+    private float GetCorrectDamping(float inputX, float momentum)
+    {
+        if (Mathf.Abs(inputX) < .01) return stoppedDamping;
+        else if (Mathf.Sign(inputX) != Mathf.Sign(momentum)) return turningDamping;
+        return horizontalDamping;
+    }
 
     private void RotatePlayer(float x)
     {
@@ -53,14 +71,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        coyoteTimer -= Time.deltaTime;
+        jumpBufferTimer -= Time.deltaTime;
 
-        if (Input.GetButtonDown("Jump") && onGround)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        }
+        if (onGround) coyoteTimer = coyoteTime;
+        if (Input.GetButtonDown("Jump")) jumpBufferTimer = jumpBufferTime;
 
         float xInput = Input.GetAxisRaw("Horizontal");
-        CalculateXVel(xInput);
+        rb.velocity = new Vector2(CalculateXVel(xInput), CalculateYVel());
 
         anim.SetFloat("SpeedX", Mathf.Abs(xInput));
         anim.SetFloat("SpeedY", rb.velocity.y);
@@ -68,28 +86,44 @@ public class PlayerController : MonoBehaviour
         RotatePlayer(xInput);
     }
 
-    private void FixedUpdate()
+    private float CalculateYVel()
     {
-        isGrounded();
-        rb.gravityScale = defaultGravity;
-        if (grappleController.isGrappling)
+        float velocity = rb.velocity.y;
+        if ((jumpBufferTimer > 0) && (coyoteTimer > 0))
         {
-            rb.gravityScale = 0;
+            jumpBufferTimer = 0;
+            coyoteTimer = 0;
+            velocity = jumpForce;
         }
-        else if (rb.velocity.y < 0)
+
+        if (Input.GetButtonUp("Jump"))
         {
-            rb.gravityScale *= fallGravityMultiplier;
+            if (rb.velocity.y > 0)
+            {
+               velocity *= cutJumpHeight;
+            }
         }
-        else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
-        {
-            rb.gravityScale *= variableJumpGravityMultiplier;
-        }
+        return velocity;
     }
 
-    private void isGrounded()
+    private void FixedUpdate()
+    {
+        UpdateGrounded();
+        //rb.gravityScale = defaultGravity;
+        //if (rb.velocity.y < 0)
+        //{
+        //    rb.gravityScale *= fallGravityMultiplier;
+        //}
+        //else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+        //{
+        //    rb.gravityScale *= variableJumpGravityMultiplier;
+        //}
+    }
+
+    private void UpdateGrounded()
     {
         onGround = false;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, mask);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundMask);
         if (colliders.Length > 0)
         {
             onGround = true;
