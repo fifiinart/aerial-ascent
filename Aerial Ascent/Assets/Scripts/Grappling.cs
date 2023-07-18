@@ -12,6 +12,9 @@ public class Grappling : MonoBehaviour
     public LineRenderer lineRenderer;
     private Vector2 grapplingPos;
     public bool isGrappling = false;
+    public float grappleAngle = 0f;
+    public float actualSpeed = 0f;
+    public Vector2 directionToGrapplePos;
     private Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -38,15 +41,13 @@ public class Grappling : MonoBehaviour
             hit = Physics2D.Raycast(transform.position, lookDirection, distance, mask);
             if (hit)
             {
-                grapplingPos = hit.point;
-                isGrappling = true;
+                StartGrappling();
             }
         }
 
         if(Input.GetMouseButtonUp(0))
         {
-            //stop Grappling
-            isGrappling = false;
+            StopGrappling();
         }
         if (lineRenderer.enabled = isGrappling) // lineRenderer.enabled is set to isGrappling
         {
@@ -54,22 +55,33 @@ public class Grappling : MonoBehaviour
             lineRenderer.SetPosition(0, transform.position);
             lineRenderer.SetPosition(1, grapplePosVec3);
         }
+    }
 
+    public void StopGrappling()
+    {
+        //stop Grappling
+        isGrappling = false;
 
-        //will need to replace transform.right with mouse direction input
-      
-        
+        grappleAngle = 0f;
+    }
 
-        
+    public void StartGrappling()
+    {
+        grapplingPos = hit.point;
+        isGrappling = true;
+
+        directionToGrapplePos = grapplingPos - (Vector2)transform.position;
+        grappleAngle = Vector2.Angle(transform.rotation.eulerAngles, directionToGrapplePos);
+        float dotProduct = Vector2.Dot(rb.velocity, directionToGrapplePos.normalized);
+        actualSpeed = Mathf.Max(speed, dotProduct); // maintain rb velocity if we have more than speed
     }
 
     void FixedUpdate()
     {
         if (isGrappling)
         {
-            var directionToGrapplePos = (grapplingPos - (Vector2)transform.position).normalized;
-            Debug.DrawRay(transform.position, directionToGrapplePos * speed, Color.white);
-            rb.velocity = directionToGrapplePos * speed;
+            Debug.DrawRay(transform.position, directionToGrapplePos, Color.white);
+            rb.velocity = directionToGrapplePos.normalized * actualSpeed;
         }
     }
 }
