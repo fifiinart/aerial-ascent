@@ -7,6 +7,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private Animator anim;
+    private Grappling grappling;
+    private Vector2 startPos;
 
     [Header("Ground Collision")]
     public LayerMask groundMask;
@@ -42,6 +45,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        grappling = GetComponent<Grappling>();
+        startPos = transform.localPosition;
     }
 
     void Update()
@@ -59,6 +65,27 @@ public class PlayerController : MonoBehaviour
         float velocity = CalculateDampedVelocity();
 
         rb.velocity = new Vector2(velocity, rb.velocity.y);
+
+        FlipPlayer();
+        anim.SetFloat("SpeedX", Mathf.Abs(rb.velocity.x));
+        anim.SetFloat("SpeedY", rb.velocity.y);
+        anim.SetBool("InAir", !onGround);
+        anim.SetBool("Grappling", grappling.isGrappling);
+    }
+
+    private void FlipPlayer()
+    {
+        if (grappling.isGrappling)
+        {
+            float y = grappling.directionToGrapplePos.x < 0 ? 180f : 0f;
+            float z = grappling.grappleAngle;
+
+            transform.rotation = Quaternion.Euler(0, y, z);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, (float)(Input.GetAxisRaw("Horizontal") < 0.01f ? 180f : 0f), 0);
+        }
     }
 
     private float CalculateDampedVelocity()
@@ -66,7 +93,9 @@ public class PlayerController : MonoBehaviour
         float velocity = rb.velocity.x;
         velocity += Input.GetAxisRaw("Horizontal");
 
-        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01f)
+        if (grappling.isGrappling)
+            velocity *= 1; // don't damp grapple
+        else if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01f)
             velocity *= Mathf.Pow(1f - stoppedDamping, Time.deltaTime * 10f);
         else if (Mathf.Sign(Input.GetAxisRaw("Horizontal")) != Mathf.Sign(velocity))
             velocity *= Mathf.Pow(1f - turningDamping, Time.deltaTime * 10f);
@@ -82,6 +111,10 @@ public class PlayerController : MonoBehaviour
             bufferJumpTimer = 0;
             coyoteJumpTimer = 0;
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            if (grappling.isGrappling)
+            {
+                grappling.StopGrappling();
+            }
         }
     }
 
@@ -108,10 +141,15 @@ public class PlayerController : MonoBehaviour
     private void UpdateCoyoteJumpTimer()
     {
         coyoteJumpTimer -= Time.deltaTime;
-        if (onGround)
+        if (CanJump())
         {
             coyoteJumpTimer = coyoteJumpTime;
         }
+    }
+
+    private bool CanJump()
+    {
+        return onGround || grappling.isGrappling;
     }
 
     private bool CheckIfGrounded()
