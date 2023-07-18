@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && onGround)
         {
-            rb.velocity += Vector2.up * jumpForce;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
         if (rb.velocity.y < 0)
