@@ -1,0 +1,5865 @@
+fileFormatVersion: 2
+guid: f72cdd968f1e2734a8dd02c6db43c65c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c209d3806c61b47a9e5fb2d516575b
+      internalID: 2113332097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1af6aeeb46eb244854a362fd25f529
+      internalID: 1066402223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807db248f5343a246af20855ccdc43aa
+      internalID: 1050705989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277fd9712d354d74293f6e199e532a77
+      internalID: 1351792715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2588b6a78eec23b4eadf3c782684cff0
+      internalID: -445352058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd4ee7295a9ebb4c893cd11881b9779
+      internalID: -1003418436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ed343090cf6914b98e738afbcaa62a
+      internalID: -1803881836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2df4a0051af1f41848882389512593
+      internalID: -652872656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ec9c9f953a04749be8d15c675d7d10
+      internalID: 1583939167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88883c99907002c47aa45096e1f546b5
+      internalID: 1365211868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c9b0bcb5c8694459349f8dfd5698f6
+      internalID: 398291402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_11
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4134d711f8a3749bd0f56ac818a887
+      internalID: 967855761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f02e9b5e721a4e4a973374aaab27da5
+      internalID: -134611442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_13
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766d2a2f667f77a42af06fc33c41270d
+      internalID: 1056112668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_14
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 492
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cc8f6728e20db40b9e7be1aee51984
+      internalID: 1069204426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 472
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3922f1b1f788c68488ad227faedbcdbd
+      internalID: -195640310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 472
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01472f651d111fc4eaaec6ed603f0e4c
+      internalID: 1068557633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 472
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c297bafe60d97429ee94c8cf3ec7f6
+      internalID: -1652055614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_18
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 472
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3fff3d231d24940afa980ff5e72835
+      internalID: -958068325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 472
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c632d704278a3f0449cf18704b174216
+      internalID: -1403193842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 472
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da15ab614e9f0c9448af97065f4f999b
+      internalID: 779099932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_21
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 472
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feee3ee43da21564fa7b0c2148d4f36f
+      internalID: -1831072361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_22
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 472
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adcdb813cf17c649970988220621f41
+      internalID: -75570172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 472
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30cddcf8b0d90e4d93a6023661b9e39
+      internalID: 176426809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107cb0a675fcaff41b1e39e3f6ca3adf
+      internalID: 1718577320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_25
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9e9fb43d8303644898a1a4f32c703d
+      internalID: -1272462520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_26
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802cc188a00f049409e02a354ea56038
+      internalID: 1048377734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5185ed701c1774c9d887831eb8e6f4
+      internalID: 832080925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a277c12047f7f45a6f6204cfeb0b9a
+      internalID: -1134984010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_29
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a881398e6e00f645a0d88fca09a812a
+      internalID: 528027856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04929ead76a5cd40844e049408b4c43
+      internalID: 1348839635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_31
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f51ca52889873a4b962873d1b15928e
+      internalID: -414304615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_32
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df940c13510e3148a89e20a686011da
+      internalID: -521049297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_33
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7690156999064c449348ef1fcbaaeca
+      internalID: -1528060239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_34
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb037198a986d4c44ac4f94abf0592f3
+      internalID: 1795429510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_35
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11253ca281e1b34aa2b93c7ebf07bba
+      internalID: 250483276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_36
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7890ca70b18bce94d9dc20afc8587f6e
+      internalID: -664203467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_37
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 452
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11950f50d9e8fba45b41ccb505bf5921
+      internalID: -559258591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadb1e6781519f9499b28f5ba17fa2e6
+      internalID: 495806837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_39
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7047d70834a1341876a163f9b4ab40
+      internalID: -514567677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_40
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46dc4f1ffe9695045865f1bfd8df4e6c
+      internalID: 1980261887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_41
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5e84e5eb44f464a8c7024a008d03e8
+      internalID: 356514719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_42
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162e26a1b2a203e478489c0e6cdd2795
+      internalID: 594723379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55cd8d9ec558614f8f8ece72762b6e0
+      internalID: -106593227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_44
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0364849b847e6b347b619477e5dcd659
+      internalID: 1978430077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e270450bb524d458fa3a1a71849547
+      internalID: -1391291914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_46
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d387df3849cd65943bb7eaa3cb9f284b
+      internalID: -2060571026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_47
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0838860cfb43a4289536855c17faab
+      internalID: 821761076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_48
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757a6a80fca49c04a9dc906310635569
+      internalID: 2019062263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_49
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2eec4e5ae1d4646a5ecc7e76e9f69f
+      internalID: -1245992538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_50
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbdc939f8760b3429b55b3a01402d94
+      internalID: -782339502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_51
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c793ce96759a794abc97cfa4226fdc8
+      internalID: -1017424483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_52
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaae590946aea744e8ca254d32cf293f
+      internalID: -530412137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab1e3ebd7ffed549aa48b883bbed23e
+      internalID: 2115485369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_54
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff2607c8cca6184db94d22c666bca3b
+      internalID: 1657141818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_55
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d6e9b2c0181d142a3aeb2818155d1b
+      internalID: 1144162511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_56
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec30cee7bec90146aa7bb0f61e9de5f
+      internalID: 488929173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775df4e84c677a34ab12da8f022c0558
+      internalID: 1670510149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_58
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5f6ae18426dda4880ae9b77e380361
+      internalID: -1078034214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_59
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c275c742b1649d4418a74b66495846db
+      internalID: 1390475046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_60
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067d2cf7be5b8354d829a488ea8a532f
+      internalID: 1868381748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_61
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601ea6d0ad6bd3a4c89c174fa2c33bcf
+      internalID: -393006014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_62
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e62062b024757948be3e26c86c6a63c
+      internalID: -1679219752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_63
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d6aec2b4c82d24a8f91967e03c40fe
+      internalID: -488612091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_64
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a6d3bb89a1d0345abf549e46f55b9c
+      internalID: -2014395894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fa16a36d40e1d4a9410e62b6a7f6f5
+      internalID: -1428332747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_66
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e368e4311f9665a46b58ce04bfb3f32c
+      internalID: 488170562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_67
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec86c0076e43c02448f938df6ff75c01
+      internalID: -1250631118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_68
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca24511b00b5a14b89bf08e0e4c98e0
+      internalID: 1382932971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_69
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8167f0ec8c55d4847b46efa97329474b
+      internalID: 680492396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_70
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31c4fbbbf4ba54489ba44f15e5cd5f7
+      internalID: 718437394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_71
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e731c1c16ec9044bbf4fc1a8b70cc1f
+      internalID: 1244004718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_72
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c505d377d9f47824680287eac29f5f1f
+      internalID: 1018929043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_73
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7534125ae49585f4b957adc773c5d8c8
+      internalID: 86099717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_74
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e539a9d58a3954fa9fdc8f356a52ef
+      internalID: 192659375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_75
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 412
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152fd2fe3f4ef5a4997ea8fecbd70dc2
+      internalID: 1297697023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0309a224d1298f94c995e049d3a0a009
+      internalID: -394885844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_77
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9380886ea4aeae4448513f27517eafb1
+      internalID: 2056484270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_78
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bbc3c53220dcb4a8c45176ec8e7568
+      internalID: 563066290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_79
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3130da16aa2b44f845d2cd120d4e2a
+      internalID: -272431639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_80
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee0a1920accffa488a7eb97a187d685
+      internalID: 1920063637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_81
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d7051d0b48ec743b5c003e6547f84c
+      internalID: 1391177384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_82
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c30672a98310ad4796667ad208492d3
+      internalID: -1445853964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_83
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2eb37c838791404f8ef67997b95711d
+      internalID: -666784783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_84
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b6f34492dc73643b9a6fd1c8719ef8
+      internalID: 877842413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_85
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f098e6e2d85ee498e9c108f9f92421
+      internalID: 815930755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_86
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3fcce81e9cd6644b81baa057c3062a
+      internalID: 1683744006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_87
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609eb3273a8be7449973e05b549fe18f
+      internalID: 1423819669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_88
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891f3f9e59838b34a939a84aeab0665b
+      internalID: 587056409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_89
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647bef0d7761f8940a93c2898d221c77
+      internalID: 359091865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_90
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec31218f31da064d897cbeec1170139
+      internalID: -1790082457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_91
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cc195223eb95541804374ca7e4d554
+      internalID: 719424783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_92
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab727225916d7ac4d8c11df0e38dfd02
+      internalID: -462333500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2673a80321cf2d4ea10b120ebf90b3f
+      internalID: -1779455646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_94
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292d94d8f82636846bf5424a193d483a
+      internalID: 586484666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_95
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9961400a79b322c46ab102fbe809dce8
+      internalID: -197887982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_96
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aca011ef1635b147ba12cb9c31ef4fc
+      internalID: -2057214815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_97
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdb6073f72a3df4aa2a1eed1f2507fb
+      internalID: 651378643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_98
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f233534b7ba8d58439b75959c85b7c18
+      internalID: -647733017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_99
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ab7993645bb334183e51a234fb228e
+      internalID: -1662168783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_100
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03ba1dfcb42c6a40b384bf0c8246f73
+      internalID: 2142489633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_101
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bca840cd525e234f8b8b03198702e5a
+      internalID: 1082754274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_102
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5d8b62d354e2b46ac695d6ab83d5b0
+      internalID: 1270695975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_103
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d1fb588ebcc334484610f490e89dff
+      internalID: -1174612738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_104
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c000b6f95b021eb4e985955b2f147d5d
+      internalID: 1369812989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_105
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 372
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df99850b194c3d44988adce96030356d
+      internalID: 564536235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_106
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed68c5d9883bb77409abc73ec873bff8
+      internalID: -2049609438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_107
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceacceb745279ef4ba2139fe793508fa
+      internalID: 896846544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_108
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6eebff2356d2f14ea7b8a72daffbadc
+      internalID: 2008364961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_109
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b058e97fb46bb419d440e6638af250
+      internalID: -805598131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_110
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c8c0cb18f920146bf6666fbda2ce45
+      internalID: 1049567356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_111
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43a72c2ee32e8d418e9c221d62cfe40
+      internalID: -422824606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_112
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99380dfa5e658b14bbb919126bb3d8a1
+      internalID: -1541955863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_113
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ba2558c803b88419d909065622ed64
+      internalID: 139357981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_114
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1643ed05e29c0f40ae03afeb0bc7619
+      internalID: 2076010529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_115
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2950ae208d3ad46814db50dd62fafc
+      internalID: -822575656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_116
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9aa3d2fa7f4a44294975c222b3daba
+      internalID: 1092857168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_117
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4eb76513404fb049ad4796ef9790f92
+      internalID: 40388205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_118
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 352
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed492ec87c588148b973d25674f0605
+      internalID: 381955660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 332
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9274329254eb6c847a0527e5a99b8473
+      internalID: -656958767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_120
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 332
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3a16273ffe9a54daa24fb867b65c7e
+      internalID: 1060140227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_121
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 332
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bceb45c771012f43b5b5a959530547a
+      internalID: 367822244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_122
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 332
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166ed5b1e7ece1e46ad41fb06eefa656
+      internalID: -737046277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_123
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 332
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80492be03635a845b0d3a6082999465
+      internalID: 976575767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_124
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 332
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13b1cb2a82a66546a39a2ca8ed72197
+      internalID: -15879325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_125
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 332
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1492de03941854049a919138324e0f4b
+      internalID: -213229094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880540ff24448fa46a327ad3f958fed3
+      internalID: -1153310293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_127
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f665bab9de9bf484187299b401ef647a
+      internalID: 89309723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_128
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f9e9052ec397943a9c86e3d2a4a77b
+      internalID: -764004459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_129
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfe2e724f8731a4fa1165d92ee82239
+      internalID: -2042604256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_130
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44e136dda2ccfa47830553bd59d7947
+      internalID: 62730981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_131
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f823374692d176a47ae1618e8f84766c
+      internalID: 1281838585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_132
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af179aa01a7d7742becef4274781270
+      internalID: 478775234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_133
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8d8b74d216f904ab95ce0eff62fa72
+      internalID: -1588282359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_134
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699471676eb3512499214faf1628ad5d
+      internalID: 1943451756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_135
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89869d6282f5dbf4bbe94eff155b208e
+      internalID: 1044011070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_136
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f373dc1076d18428dff5387bbefaa3
+      internalID: -1930325169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_137
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5876966af99d8054db2ddb5ffe937f2b
+      internalID: -160969008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_138
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8233cbf7bd1a54480e0218c2df49fb
+      internalID: -993468444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_139
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161439fec536a9f4482297e8d5fc4716
+      internalID: 1801084920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_140
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b923bf70eab5e4409f9da1dc1bcb885
+      internalID: -464958372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_141
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2640b5485fa570c45946489216abf969
+      internalID: 754524607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_142
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05eb458b8543ab74b8ffafc1f7989b91
+      internalID: 2005633336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_143
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4919fb96125ac2e42b596380b70933f7
+      internalID: -2096303156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_144
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aca08b8b45669c43b05c91595ac07d5
+      internalID: 30660868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_145
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a94cca0008a4144bfa1c81ca64bd0c
+      internalID: 341960453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_146
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d49775dabff9244b90050a6b79f090
+      internalID: -970640646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_147
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445786af13d1f6245a83e34278e5dd13
+      internalID: 1070824147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_148
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee541237f7e991f4098fd600f19345c2
+      internalID: 1603379230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_149
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00bcca8bbbd63884bb371e13477bb993
+      internalID: 616678912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_150
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a681b5a3e39b9784091d9a8d2e63573a
+      internalID: 1634235886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_151
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b184888d1cd3ab54e9abbbdf89d3e779
+      internalID: 46483616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_152
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5f4328a66b9084f886d113376167db
+      internalID: -1403961485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_153
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dc93641571f9349a93244e0523f665
+      internalID: 1207057565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_154
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b6b3bb77834e046845e8b1ed185421
+      internalID: -1084793360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_155
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299cb7f97e4471040ac84721a1c5999e
+      internalID: 1938217711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_156
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4674004cfbc1e3947a1877fed2590fe6
+      internalID: 1066688965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_157
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39993d5313a66f4992f6d8ccc83f68e
+      internalID: 376306835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_158
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a09b4d240864b145ab5dad2ed179ed9
+      internalID: 1431650308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_159
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc7971d3c3302846b813eb30a324bf6
+      internalID: 1252743054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_160
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e6a8aff85f3934281daf0c86dc3de0
+      internalID: -415910091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_161
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56815ce608ff2c439328a5b44f765a3
+      internalID: -64938823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_162
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fc60306e6364549a41dd00eaac2286
+      internalID: 47601909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_163
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0464cda1928a1114494a278cf9607c98
+      internalID: 359206226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_164
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21b1e3570996a3449c0bc9beaa6951f
+      internalID: 480176046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_165
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480edceb74246054f88e445f1d9e335e
+      internalID: -1025253463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_166
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87183fa071549ee45a6e3652e44f79a4
+      internalID: 759938016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_167
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae79052759300645ab9ac507337fbe7
+      internalID: 484743024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_168
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246bdfe79ca4c784d961e1b99371e785
+      internalID: -1452584869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_169
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce213b99d8a5cd145853742e46eed9b6
+      internalID: 1322403900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_170
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bd3b8075a0f1645b8d8dd9fc8b8292
+      internalID: 474070511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_171
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0fe1f0131d1e845bfe4fda9aa4dc58
+      internalID: 298082874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_172
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d48c324df59c1e48bb973086cce626c
+      internalID: 1373515070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_173
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a85413b573ebb4aaac1fd40feff80e
+      internalID: 1704981049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_174
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42818c08f2d630d4faa1394f90a44d43
+      internalID: -1099928999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_175
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1d858ce08574047b7fa8d6b0ecc443
+      internalID: -1067296601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_176
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a47d17e704e4644a8126084a0b72ff2
+      internalID: 5673597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_177
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b45077ef5671f4d8c10a565e69ff44
+      internalID: 32998421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_178
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f74383079edbe40afe758d1e2abd33
+      internalID: -1076581269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_179
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ac30ae489752849877ec3ee4b74196
+      internalID: 2146872879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_180
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a17f37681e42f4bbcbff3bb665ceab
+      internalID: 25170636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_181
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3e8336fb0932d4a8bfdadf60172576
+      internalID: 1360425731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_182
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf99ff97c77fcd4588a37017cc7fc67
+      internalID: -133778943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_183
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c311b2ec89560e34fbb3a92494abbb89
+      internalID: -679004106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_184
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca464af98b7e274c8bb6db9bd38124e
+      internalID: -712573529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_185
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 272
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ae37d2b3610544f94120f8d9eba1b8
+      internalID: -1057865239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_186
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7a61ce74e406d479203b02a06a06b4
+      internalID: 270731530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_187
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8ce96f41f11dd4eb0f16c5de2a10ef
+      internalID: -668312129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_188
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd89f2632d8cc77478588b2f2e537740
+      internalID: -1184922784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_189
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f327142679054245993136d1700ead6
+      internalID: -367790462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_190
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771108e10a2802c4caf44bc2e0487d5d
+      internalID: -1816511831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_191
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80981359b67bf354a84d43d69e9871e6
+      internalID: -364058080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_192
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8e14f0273243a41ad3e377c37e2b88
+      internalID: 300632789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_193
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5eb0d4a810bef42acf7ea1952d3c91
+      internalID: -2107067481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_194
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea00323f47dc5e94da6cff35168d491f
+      internalID: 1917459274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_195
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b32b53e88299d8478508447d1fc55d2
+      internalID: -1357646109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_196
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f39c5bf408dce84e8f86f6667740506
+      internalID: -1014378924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_197
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda5757ea857c59439be8d3f701e5302
+      internalID: -899878221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_198
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 252
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e50c2815212ea46bf8090f272c7824
+      internalID: 1692206047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_199
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb24a427a079884f840d880a7c44a6f
+      internalID: -120479479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_200
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 232
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3febc9111b21f40adb62e1827bd245
+      internalID: -2051561912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_201
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 232
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b446c8fb08a562048940e36f568a02f4
+      internalID: -1723057350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_202
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 232
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae2f4a7c5a72cc43a1c458e84e3b0bc
+      internalID: -1973316561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_203
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 232
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3158aa5561b7a9a48b0377abd60dd522
+      internalID: -2098449092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_204
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 232
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f00ee1e59b2424ea4d97b469d2dbb3
+      internalID: -1463629835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_205
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 232
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58092f1bc0b8ff94587b9ca735475a91
+      internalID: -1501211473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_206
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 232
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607e4f5e0c5c2914d9d76f2cec74ff72
+      internalID: -1126446367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_207
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 232
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916a34e157ae5f84ab678ff27151a11b
+      internalID: 1041983445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_208
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 232
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5d761a72e65cb4aab122373887f2d8
+      internalID: -52991471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_209
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b4ff966335fc24d8025b0bfc288549
+      internalID: -1958673649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_210
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe88316829041e34c8e5c21cedbc4f11
+      internalID: -2060853789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_211
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e96477bf1a558246a57f3712048d785
+      internalID: -1453557781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_212
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9116bc27019d71a43bf06ea4e2c64632
+      internalID: -1751488172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_213
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667c24230ad47ae469c56df14b529d7d
+      internalID: -326254188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_214
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0259866eb992e4abe7223d7d5bd539
+      internalID: 622884697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_215
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d83dd8f7f029a14ebeb537a2cde4e42
+      internalID: 884562798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_216
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d05df7a99f0524bba41d949b100fe0
+      internalID: -196958797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_217
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fa7e812cb629b47a491689e1a0d46c
+      internalID: 1058028059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_218
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75f34d4173b3c943b372324c97b5855
+      internalID: 3382813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_219
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c258b29e5103641afee4b233017cd0
+      internalID: -1400700221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_220
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb13b2a252dca8d4ba412a23690e16d1
+      internalID: 788802186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_221
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99e42e82b1a84d4a90504d6ebec89fa
+      internalID: -283947636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_222
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 212
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f9264e0ed7652419a41b5c0c1d0e33
+      internalID: -1444335654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_223
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27983fa977a0b8d4683d551bf88f47d9
+      internalID: -1026527972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_224
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebec3a412637a8499a01f7429b6f731
+      internalID: 88854578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_225
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff41ca0005d8db4685c0a9d6edd8d6c
+      internalID: 589473774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_226
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0daedebbb8965de4a9b7a69e044559d0
+      internalID: 215454785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_227
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809395e3b5442b94ea3032a8a8d5e1b4
+      internalID: 246683759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_228
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d826412da348ba43a2f066d051a4d7b
+      internalID: -775650130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_229
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5e5e88084c9d64c8bfb0d81e4525ac
+      internalID: 1852346185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_230
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5ce016894de6a4ea4efd87d371e950
+      internalID: 757188048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_231
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430ce0332ed448648aad49bd69e6cfef
+      internalID: 382288760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_232
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0c29007da97fd418b90dea91c5b1e1
+      internalID: -1986740516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_233
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dd196dff39fd045b1017ccf181bd47
+      internalID: 858559601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_234
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 192
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb0fe3ee7d725b46b09052b3aa6edbf
+      internalID: -1931651535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_235
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5125fdedb09c8c48af19c098cfbf3a3
+      internalID: 550233657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_236
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7828288ec18f24e85bf8510ee0bb59
+      internalID: 947102874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_237
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89a4f416742fe041b0e7965605dd8b2
+      internalID: -939930874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_238
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a4ac82bb2ebf84a8cad1d80c895740
+      internalID: 32490784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_239
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9558b4f357d6ca4883ef726f8c415ad
+      internalID: -267425235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_240
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39264ea3e6274d643a39cd3f47b68612
+      internalID: 1283170522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_241
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de81b33bf43c1eb42a080e86aa1fff03
+      internalID: -1063627754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_242
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c911f960f7a2d4fad93656a005bac7
+      internalID: 172779950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_243
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab0a05ffda61334183631577e56ef9c
+      internalID: -1912737482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_244
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f86a5cf3bff16846ac550b5cde29ba8
+      internalID: 734326993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_245
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0cfd9ced8c18149a6cebcd400a4acf
+      internalID: -216536490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_246
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0fc5800d08ab343a33acaca0c2fc9e
+      internalID: -1873757813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_247
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 172
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d15b83ee485cf4db2d5da4ede986b0
+      internalID: -733789030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_248
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c761805e94447104380d4aa7a18255ac
+      internalID: 1126200128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_249
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 152
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0882812416683c74fb5415615e559715
+      internalID: -1127933489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_250
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 152
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c995a3566eb3a8e449d3e81a802ff5bd
+      internalID: 1379750166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_251
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 152
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aada58f10adbb924295d76341770b0a7
+      internalID: 1905184921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_252
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 152
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ce0f85f6de1c0449e19c140caec367
+      internalID: 1044965338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_253
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 152
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349c282db255d134b86febe3049faadf
+      internalID: -1207217877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_254
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 152
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093f72ccd69067b48b97c4792872c3de
+      internalID: 161602735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_255
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 152
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a2ca59405e42d47ad86590e96559ef
+      internalID: 192938562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_256
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 152
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a59dc85530ae54babb0e1b7afb85cd
+      internalID: -2025981373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_257
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 52
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c970438d8d8c59498899632598aa543
+      internalID: -1167095075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_258
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 32
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a21d8c024bc264bb8fbde241324261
+      internalID: -163777951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_259
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 12
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4e738ee62e93e408d1b17a93783f9e
+      internalID: 1752410116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudRuinsTileset_16_260
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 12
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04805b1f9671b13448f19451aa1d2b31
+      internalID: -1811468297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CloudRuinsTileset_16_0: 2113332097
+      CloudRuinsTileset_16_1: 1066402223
+      CloudRuinsTileset_16_10: 398291402
+      CloudRuinsTileset_16_100: 2142489633
+      CloudRuinsTileset_16_101: 1082754274
+      CloudRuinsTileset_16_102: 1270695975
+      CloudRuinsTileset_16_103: -1174612738
+      CloudRuinsTileset_16_104: 1369812989
+      CloudRuinsTileset_16_105: 564536235
+      CloudRuinsTileset_16_106: -2049609438
+      CloudRuinsTileset_16_107: 896846544
+      CloudRuinsTileset_16_108: 2008364961
+      CloudRuinsTileset_16_109: -805598131
+      CloudRuinsTileset_16_11: 967855761
+      CloudRuinsTileset_16_110: 1049567356
+      CloudRuinsTileset_16_111: -422824606
+      CloudRuinsTileset_16_112: -1541955863
+      CloudRuinsTileset_16_113: 139357981
+      CloudRuinsTileset_16_114: 2076010529
+      CloudRuinsTileset_16_115: -822575656
+      CloudRuinsTileset_16_116: 1092857168
+      CloudRuinsTileset_16_117: 40388205
+      CloudRuinsTileset_16_118: 381955660
+      CloudRuinsTileset_16_119: -656958767
+      CloudRuinsTileset_16_12: -134611442
+      CloudRuinsTileset_16_120: 1060140227
+      CloudRuinsTileset_16_121: 367822244
+      CloudRuinsTileset_16_122: -737046277
+      CloudRuinsTileset_16_123: 976575767
+      CloudRuinsTileset_16_124: -15879325
+      CloudRuinsTileset_16_125: -213229094
+      CloudRuinsTileset_16_126: -1153310293
+      CloudRuinsTileset_16_127: 89309723
+      CloudRuinsTileset_16_128: -764004459
+      CloudRuinsTileset_16_129: -2042604256
+      CloudRuinsTileset_16_13: 1056112668
+      CloudRuinsTileset_16_130: 62730981
+      CloudRuinsTileset_16_131: 1281838585
+      CloudRuinsTileset_16_132: 478775234
+      CloudRuinsTileset_16_133: -1588282359
+      CloudRuinsTileset_16_134: 1943451756
+      CloudRuinsTileset_16_135: 1044011070
+      CloudRuinsTileset_16_136: -1930325169
+      CloudRuinsTileset_16_137: -160969008
+      CloudRuinsTileset_16_138: -993468444
+      CloudRuinsTileset_16_139: 1801084920
+      CloudRuinsTileset_16_14: 1069204426
+      CloudRuinsTileset_16_140: -464958372
+      CloudRuinsTileset_16_141: 754524607
+      CloudRuinsTileset_16_142: 2005633336
+      CloudRuinsTileset_16_143: -2096303156
+      CloudRuinsTileset_16_144: 30660868
+      CloudRuinsTileset_16_145: 341960453
+      CloudRuinsTileset_16_146: -970640646
+      CloudRuinsTileset_16_147: 1070824147
+      CloudRuinsTileset_16_148: 1603379230
+      CloudRuinsTileset_16_149: 616678912
+      CloudRuinsTileset_16_15: -195640310
+      CloudRuinsTileset_16_150: 1634235886
+      CloudRuinsTileset_16_151: 46483616
+      CloudRuinsTileset_16_152: -1403961485
+      CloudRuinsTileset_16_153: 1207057565
+      CloudRuinsTileset_16_154: -1084793360
+      CloudRuinsTileset_16_155: 1938217711
+      CloudRuinsTileset_16_156: 1066688965
+      CloudRuinsTileset_16_157: 376306835
+      CloudRuinsTileset_16_158: 1431650308
+      CloudRuinsTileset_16_159: 1252743054
+      CloudRuinsTileset_16_16: 1068557633
+      CloudRuinsTileset_16_160: -415910091
+      CloudRuinsTileset_16_161: -64938823
+      CloudRuinsTileset_16_162: 47601909
+      CloudRuinsTileset_16_163: 359206226
+      CloudRuinsTileset_16_164: 480176046
+      CloudRuinsTileset_16_165: -1025253463
+      CloudRuinsTileset_16_166: 759938016
+      CloudRuinsTileset_16_167: 484743024
+      CloudRuinsTileset_16_168: -1452584869
+      CloudRuinsTileset_16_169: 1322403900
+      CloudRuinsTileset_16_17: -1652055614
+      CloudRuinsTileset_16_170: 474070511
+      CloudRuinsTileset_16_171: 298082874
+      CloudRuinsTileset_16_172: 1373515070
+      CloudRuinsTileset_16_173: 1704981049
+      CloudRuinsTileset_16_174: -1099928999
+      CloudRuinsTileset_16_175: -1067296601
+      CloudRuinsTileset_16_176: 5673597
+      CloudRuinsTileset_16_177: 32998421
+      CloudRuinsTileset_16_178: -1076581269
+      CloudRuinsTileset_16_179: 2146872879
+      CloudRuinsTileset_16_18: -958068325
+      CloudRuinsTileset_16_180: 25170636
+      CloudRuinsTileset_16_181: 1360425731
+      CloudRuinsTileset_16_182: -133778943
+      CloudRuinsTileset_16_183: -679004106
+      CloudRuinsTileset_16_184: -712573529
+      CloudRuinsTileset_16_185: -1057865239
+      CloudRuinsTileset_16_186: 270731530
+      CloudRuinsTileset_16_187: -668312129
+      CloudRuinsTileset_16_188: -1184922784
+      CloudRuinsTileset_16_189: -367790462
+      CloudRuinsTileset_16_19: -1403193842
+      CloudRuinsTileset_16_190: -1816511831
+      CloudRuinsTileset_16_191: -364058080
+      CloudRuinsTileset_16_192: 300632789
+      CloudRuinsTileset_16_193: -2107067481
+      CloudRuinsTileset_16_194: 1917459274
+      CloudRuinsTileset_16_195: -1357646109
+      CloudRuinsTileset_16_196: -1014378924
+      CloudRuinsTileset_16_197: -899878221
+      CloudRuinsTileset_16_198: 1692206047
+      CloudRuinsTileset_16_199: -120479479
+      CloudRuinsTileset_16_2: 1050705989
+      CloudRuinsTileset_16_20: 779099932
+      CloudRuinsTileset_16_200: -2051561912
+      CloudRuinsTileset_16_201: -1723057350
+      CloudRuinsTileset_16_202: -1973316561
+      CloudRuinsTileset_16_203: -2098449092
+      CloudRuinsTileset_16_204: -1463629835
+      CloudRuinsTileset_16_205: -1501211473
+      CloudRuinsTileset_16_206: -1126446367
+      CloudRuinsTileset_16_207: 1041983445
+      CloudRuinsTileset_16_208: -52991471
+      CloudRuinsTileset_16_209: -1958673649
+      CloudRuinsTileset_16_21: -1831072361
+      CloudRuinsTileset_16_210: -2060853789
+      CloudRuinsTileset_16_211: -1453557781
+      CloudRuinsTileset_16_212: -1751488172
+      CloudRuinsTileset_16_213: -326254188
+      CloudRuinsTileset_16_214: 622884697
+      CloudRuinsTileset_16_215: 884562798
+      CloudRuinsTileset_16_216: -196958797
+      CloudRuinsTileset_16_217: 1058028059
+      CloudRuinsTileset_16_218: 3382813
+      CloudRuinsTileset_16_219: -1400700221
+      CloudRuinsTileset_16_22: -75570172
+      CloudRuinsTileset_16_220: 788802186
+      CloudRuinsTileset_16_221: -283947636
+      CloudRuinsTileset_16_222: -1444335654
+      CloudRuinsTileset_16_223: -1026527972
+      CloudRuinsTileset_16_224: 88854578
+      CloudRuinsTileset_16_225: 589473774
+      CloudRuinsTileset_16_226: 215454785
+      CloudRuinsTileset_16_227: 246683759
+      CloudRuinsTileset_16_228: -775650130
+      CloudRuinsTileset_16_229: 1852346185
+      CloudRuinsTileset_16_23: 176426809
+      CloudRuinsTileset_16_230: 757188048
+      CloudRuinsTileset_16_231: 382288760
+      CloudRuinsTileset_16_232: -1986740516
+      CloudRuinsTileset_16_233: 858559601
+      CloudRuinsTileset_16_234: -1931651535
+      CloudRuinsTileset_16_235: 550233657
+      CloudRuinsTileset_16_236: 947102874
+      CloudRuinsTileset_16_237: -939930874
+      CloudRuinsTileset_16_238: 32490784
+      CloudRuinsTileset_16_239: -267425235
+      CloudRuinsTileset_16_24: 1718577320
+      CloudRuinsTileset_16_240: 1283170522
+      CloudRuinsTileset_16_241: -1063627754
+      CloudRuinsTileset_16_242: 172779950
+      CloudRuinsTileset_16_243: -1912737482
+      CloudRuinsTileset_16_244: 734326993
+      CloudRuinsTileset_16_245: -216536490
+      CloudRuinsTileset_16_246: -1873757813
+      CloudRuinsTileset_16_247: -733789030
+      CloudRuinsTileset_16_248: 1126200128
+      CloudRuinsTileset_16_249: -1127933489
+      CloudRuinsTileset_16_25: -1272462520
+      CloudRuinsTileset_16_250: 1379750166
+      CloudRuinsTileset_16_251: 1905184921
+      CloudRuinsTileset_16_252: 1044965338
+      CloudRuinsTileset_16_253: -1207217877
+      CloudRuinsTileset_16_254: 161602735
+      CloudRuinsTileset_16_255: 192938562
+      CloudRuinsTileset_16_256: -2025981373
+      CloudRuinsTileset_16_257: -1167095075
+      CloudRuinsTileset_16_258: -163777951
+      CloudRuinsTileset_16_259: 1752410116
+      CloudRuinsTileset_16_26: 1048377734
+      CloudRuinsTileset_16_260: -1811468297
+      CloudRuinsTileset_16_27: 832080925
+      CloudRuinsTileset_16_28: -1134984010
+      CloudRuinsTileset_16_29: 528027856
+      CloudRuinsTileset_16_3: 1351792715
+      CloudRuinsTileset_16_30: 1348839635
+      CloudRuinsTileset_16_31: -414304615
+      CloudRuinsTileset_16_32: -521049297
+      CloudRuinsTileset_16_33: -1528060239
+      CloudRuinsTileset_16_34: 1795429510
+      CloudRuinsTileset_16_35: 250483276
+      CloudRuinsTileset_16_36: -664203467
+      CloudRuinsTileset_16_37: -559258591
+      CloudRuinsTileset_16_38: 495806837
+      CloudRuinsTileset_16_39: -514567677
+      CloudRuinsTileset_16_4: -445352058
+      CloudRuinsTileset_16_40: 1980261887
+      CloudRuinsTileset_16_41: 356514719
+      CloudRuinsTileset_16_42: 594723379
+      CloudRuinsTileset_16_43: -106593227
+      CloudRuinsTileset_16_44: 1978430077
+      CloudRuinsTileset_16_45: -1391291914
+      CloudRuinsTileset_16_46: -2060571026
+      CloudRuinsTileset_16_47: 821761076
+      CloudRuinsTileset_16_48: 2019062263
+      CloudRuinsTileset_16_49: -1245992538
+      CloudRuinsTileset_16_5: -1003418436
+      CloudRuinsTileset_16_50: -782339502
+      CloudRuinsTileset_16_51: -1017424483
+      CloudRuinsTileset_16_52: -530412137
+      CloudRuinsTileset_16_53: 2115485369
+      CloudRuinsTileset_16_54: 1657141818
+      CloudRuinsTileset_16_55: 1144162511
+      CloudRuinsTileset_16_56: 488929173
+      CloudRuinsTileset_16_57: 1670510149
+      CloudRuinsTileset_16_58: -1078034214
+      CloudRuinsTileset_16_59: 1390475046
+      CloudRuinsTileset_16_6: -1803881836
+      CloudRuinsTileset_16_60: 1868381748
+      CloudRuinsTileset_16_61: -393006014
+      CloudRuinsTileset_16_62: -1679219752
+      CloudRuinsTileset_16_63: -488612091
+      CloudRuinsTileset_16_64: -2014395894
+      CloudRuinsTileset_16_65: -1428332747
+      CloudRuinsTileset_16_66: 488170562
+      CloudRuinsTileset_16_67: -1250631118
+      CloudRuinsTileset_16_68: 1382932971
+      CloudRuinsTileset_16_69: 680492396
+      CloudRuinsTileset_16_7: -652872656
+      CloudRuinsTileset_16_70: 718437394
+      CloudRuinsTileset_16_71: 1244004718
+      CloudRuinsTileset_16_72: 1018929043
+      CloudRuinsTileset_16_73: 86099717
+      CloudRuinsTileset_16_74: 192659375
+      CloudRuinsTileset_16_75: 1297697023
+      CloudRuinsTileset_16_76: -394885844
+      CloudRuinsTileset_16_77: 2056484270
+      CloudRuinsTileset_16_78: 563066290
+      CloudRuinsTileset_16_79: -272431639
+      CloudRuinsTileset_16_8: 1583939167
+      CloudRuinsTileset_16_80: 1920063637
+      CloudRuinsTileset_16_81: 1391177384
+      CloudRuinsTileset_16_82: -1445853964
+      CloudRuinsTileset_16_83: -666784783
+      CloudRuinsTileset_16_84: 877842413
+      CloudRuinsTileset_16_85: 815930755
+      CloudRuinsTileset_16_86: 1683744006
+      CloudRuinsTileset_16_87: 1423819669
+      CloudRuinsTileset_16_88: 587056409
+      CloudRuinsTileset_16_89: 359091865
+      CloudRuinsTileset_16_9: 1365211868
+      CloudRuinsTileset_16_90: -1790082457
+      CloudRuinsTileset_16_91: 719424783
+      CloudRuinsTileset_16_92: -462333500
+      CloudRuinsTileset_16_93: -1779455646
+      CloudRuinsTileset_16_94: 586484666
+      CloudRuinsTileset_16_95: -197887982
+      CloudRuinsTileset_16_96: -2057214815
+      CloudRuinsTileset_16_97: 651378643
+      CloudRuinsTileset_16_98: -647733017
+      CloudRuinsTileset_16_99: -1662168783
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
