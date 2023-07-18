@@ -26,12 +26,12 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void Walk(Vector2 dir)
+    private void Walk(float speed)
     {
-        rb.velocity = new Vector2(dir.x * speed, rb.velocity.y);
+        rb.velocity = new Vector2(speed * speed, rb.velocity.y);
 
-        anim.SetFloat("SpeedX", Mathf.Abs(dir.x));
-        RotatePlayer(dir.x);
+        anim.SetFloat("SpeedX", Mathf.Abs(speed));
+        RotatePlayer(speed);
     }
 
     private void RotatePlayer(float x)
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && onGround)
         {
-            rb.velocity = Vector2.up * jumpForce;
+            rb.velocity += Vector2.up * jumpForce;
         }
 
         if (rb.velocity.y < 0)
@@ -60,11 +60,8 @@ public class PlayerController : MonoBehaviour
         }
 
         float xInput = Input.GetAxis("Horizontal");
-        float yInput = Input.GetAxis("Vertical");
 
-        Vector2 dir = new Vector2(xInput, yInput);
-
-        Walk(dir);
+        Walk(xInput);
 
         /*
         if(Input.GetKeyDown(KeyCode.W))
