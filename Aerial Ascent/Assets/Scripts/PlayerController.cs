@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Grappling grappleController;
+    public Transform groundCheckCollider;
 
     [Header("Movement")]
     public float speed = 10f;
@@ -21,6 +22,10 @@ public class PlayerController : MonoBehaviour
     public float fallGravityMultiplier = 2.5f;
     public float variableJumpGravityMultiplier = 2f;
     public bool onGround = false;
+
+    [Header("Ground Check")]
+    public float groundCheckRadius = 0.2f;
+    public LayerMask mask;
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +70,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        isGrounded();
         rb.gravityScale = defaultGravity;
         if (grappleController.isGrappling)
         {
@@ -77,6 +83,16 @@ public class PlayerController : MonoBehaviour
         else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             rb.gravityScale *= variableJumpGravityMultiplier;
+        }
+    }
+
+    private void isGrounded()
+    {
+        onGround = false;
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, mask);
+        if (colliders.Length > 0)
+        {
+            onGround = true;
         }
     }
 
