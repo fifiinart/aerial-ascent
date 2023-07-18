@@ -31,19 +31,7 @@ public class PlayerController : MonoBehaviour
 
     private void Walk(float inputX)
     {
-        // if current velocity is higher than walk speed, use that instead
-        // should respect direction
-        // rb.velocity = new Vector2(inputX * speed + rb.velocity.x, rb.velocity.y);
-        float velocityX;
-        if (Mathf.Sign(rb.velocity.x) == Mathf.Sign(inputX) && Mathf.Abs(rb.velocity.x) > Mathf.Abs(inputX))
-        {
-            velocityX = rb.velocity.x;
-        }
-        else
-        {
-            velocityX = inputX;
-        }
-        rb.velocity = new Vector2(velocityX, rb.velocity.y);
+        rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
     }   
 
     private void RotatePlayer(float x)
