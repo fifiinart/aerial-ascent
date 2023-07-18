@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     // Components
     private Rigidbody2D rb;
     private Animator anim;
+    private Grappling grappleController;
 
     [Header("Movement")]
     public float speed = 10f;
@@ -25,12 +26,25 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        grappleController = GetComponent<Grappling>();
     }
 
     private void Walk(float inputX)
     {
-        rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
-    }
+        // if current velocity is higher than walk speed, use that instead
+        // should respect direction
+        // rb.velocity = new Vector2(inputX * speed + rb.velocity.x, rb.velocity.y);
+        float velocityX;
+        if (Mathf.Sign(rb.velocity.x) == Mathf.Sign(inputX) && Mathf.Abs(rb.velocity.x) > Mathf.Abs(inputX))
+        {
+            velocityX = rb.velocity.x;
+        }
+        else
+        {
+            velocityX = inputX;
+        }
+        rb.velocity = new Vector2(velocityX, rb.velocity.y);
+    }   
 
     private void RotatePlayer(float x)
     {
@@ -60,7 +74,11 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         rb.gravityScale = defaultGravity;
-        if (rb.velocity.y < 0)
+        if (grappleController.isGrappling)
+        {
+            rb.gravityScale = 0;
+        }
+        else if (rb.velocity.y < 0)
         {
             rb.gravityScale *= fallGravityMultiplier;
         }
