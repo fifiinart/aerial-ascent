@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public float speed = 10f;
     public float defaultGravity = 3f;
+    public float horizontalDamping;
 
     [Header("Jump")]
     public float jumpForce = 10f;
@@ -29,9 +30,12 @@ public class PlayerController : MonoBehaviour
         grappleController = GetComponent<Grappling>();
     }
 
-    private void Walk(float inputX)
+    private void CalculateXVel(float inputX)
     {
-        rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
+        float momentum = rb.velocity.x;
+        momentum += inputX;
+        momentum *= Mathf.Pow(1f - horizontalDamping, Time.deltaTime * 10f);
+        rb.velocity = new Vector2(momentum, rb.velocity.y);
     }   
 
     private void RotatePlayer(float x)
@@ -50,8 +54,8 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-        float xInput = Input.GetAxis("Horizontal");
-        Walk(xInput);
+        float xInput = Input.GetAxisRaw("Horizontal");
+        CalculateXVel(xInput);
 
         anim.SetFloat("SpeedX", Mathf.Abs(xInput));
         anim.SetFloat("SpeedY", rb.velocity.y);
