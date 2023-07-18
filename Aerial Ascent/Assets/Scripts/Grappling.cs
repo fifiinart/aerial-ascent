@@ -68,8 +68,8 @@ public class Grappling : MonoBehaviour
         if (isGrappling)
         {
             var directionToGrapplePos = (grapplingPos - (Vector2)transform.position).normalized;
-            Debug.DrawRay(transform.position, directionToGrapplePos * distance, Color.white);
-            rb.velocity = directionToGrapplePos * distance;
+            Debug.DrawRay(transform.position, directionToGrapplePos * speed, Color.white);
+            rb.velocity = directionToGrapplePos * speed;
         }
     }
 }
