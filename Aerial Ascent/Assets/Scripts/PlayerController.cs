@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10f;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
+    public bool onGround = false;
 
     // Start is called before the first frame update
     void Start()
@@ -44,19 +45,20 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && onGround)
         {
             rb.velocity = Vector2.up * jumpForce;
         }
 
         if (rb.velocity.y < 0)
         {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier -1) * Time.deltaTime;
-        } else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
-        
+
         float xInput = Input.GetAxis("Horizontal");
         float yInput = Input.GetAxis("Vertical");
 
@@ -64,7 +66,27 @@ public class PlayerController : MonoBehaviour
 
         Walk(dir);
 
-        
-        
+        /*
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+           rb.velocity = new Vector2(rb.velocity.x, 0);
+           rb.velocity += Vector2.up * jumpForce;
+        }
+        */
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Tile"))
+        {
+            onGround = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Tile"))
+        {
+            onGround = false;
+        }
     }
 }

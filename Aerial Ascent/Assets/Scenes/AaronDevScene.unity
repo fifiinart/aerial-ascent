@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 109158894}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1093,6 +1093,7 @@ MonoBehaviour:
   jumpForce: 15
   fallMultiplier: 2.5
   lowJumpMultiplier: 5
+  onGround: 0
 --- !u!50 &1939740557
 Rigidbody2D:
   serializedVersion: 4
