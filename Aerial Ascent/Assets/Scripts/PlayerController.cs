@@ -30,9 +30,6 @@ public class PlayerController : MonoBehaviour
     private void Walk(float inputX)
     {
         rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
-
-        anim.SetFloat("SpeedX", Mathf.Abs(inputX));
-        RotatePlayer(inputX);
     }
 
     private void RotatePlayer(float x)
@@ -52,8 +49,12 @@ public class PlayerController : MonoBehaviour
         }
 
         float xInput = Input.GetAxis("Horizontal");
-
         Walk(xInput);
+
+        anim.SetFloat("SpeedX", Mathf.Abs(xInput));
+        anim.SetFloat("SpeedY", rb.velocity.y);
+        anim.SetBool("InAir", !onGround);
+        RotatePlayer(xInput);
     }
 
     private void FixedUpdate()
