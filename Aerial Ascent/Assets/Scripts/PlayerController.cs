@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Grappling grappling;
-    private Vector2 startPos;
 
     [Header("Ground Collision")]
     public LayerMask groundMask;
@@ -41,13 +40,15 @@ public class PlayerController : MonoBehaviour
     [Range(0, 1)]
     public float turningDamping = 0.5f;
 
+    [Header("Bounce")]
+    public float minHorizontalBounce = 40f;
+    public float minVerticalBounce = 30f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         grappling = GetComponent<Grappling>();
-        startPos = transform.localPosition;
     }
 
     void FixedUpdate()
@@ -161,5 +162,48 @@ public class PlayerController : MonoBehaviour
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundMask);
         return colliders.Length > 0;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (grappling.isGrappling)
+            grappling.StopGrappling();
+        if (collision.gameObject.CompareTag("Bouncy"))
+        {
+            HandleBounce(collision);
+        }
+    }
+
+    private void HandleBounce(Collision2D collision)
+    {
+        var contact = collision.GetContact(0);
+        var difference = (Vector2)transform.position - contact.point;
+        if (Mathf.Abs(difference.x) > Mathf.Abs(difference.y))
+        {
+            if (contact.relativeVelocity.x > 0)
+                // collide with left/right wall
+                rb.velocity = new Vector2(
+                    Mathf.Max(minHorizontalBounce, contact.relativeVelocity.x),
+                    Mathf.Abs(contact.relativeVelocity.y)
+                );
+            else
+                rb.velocity = new Vector2(
+                    Mathf.Min(-minHorizontalBounce, contact.relativeVelocity.x),
+                    Mathf.Abs(contact.relativeVelocity.y)
+                );
+        }
+        else
+        {
+            if (contact.relativeVelocity.y > 0)
+                rb.velocity = new Vector2(
+                    -contact.relativeVelocity.x,
+                    Mathf.Max(minVerticalBounce, contact.relativeVelocity.y)
+                );
+            else
+                rb.velocity = new Vector2(
+                    -contact.relativeVelocity.x,
+                    Mathf.Min(-minVerticalBounce, contact.relativeVelocity.y)
+                );
+        }
     }
 }
