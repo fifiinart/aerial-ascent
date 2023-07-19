@@ -17,6 +17,7 @@ public class Grappling : MonoBehaviour
     public Vector2 directionToGrapplePos;
     private Rigidbody2D rb;
     public bool inControl;
+    private PlayerController playerController;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class Grappling : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();   
         rb = GetComponent<Rigidbody2D>();
         inControl = false;
+        playerController = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -39,23 +41,35 @@ public class Grappling : MonoBehaviour
         Debug.DrawRay(transform.position, lookDirection);
         
         if (Input.GetMouseButtonDown(0) && isGrappling == false && inControl)
+        if (!playerController.gameOver)
         {
-            hit = Physics2D.Raycast(transform.position, lookDirection, distance, mask);
-            if (hit)
-            {
-                StartGrappling();
-            }
-        }
+            //get mouse pos
+            //get look direction
 
-        if(Input.GetMouseButtonUp(0))
-        {
-            StopGrappling();
-        }
-        if (lineRenderer.enabled = isGrappling) // lineRenderer.enabled is set to isGrappling
-        {
-            Vector3 grapplePosVec3 = new Vector3(grapplingPos.x, grapplingPos.y, transform.position.z);
-            lineRenderer.SetPosition(0, transform.position);
-            lineRenderer.SetPosition(1, grapplePosVec3);
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 lookDirection = (mousePos - (Vector2)transform.position).normalized;
+
+            Debug.DrawRay(transform.position, lookDirection);
+
+            if (Input.GetMouseButtonDown(0) && isGrappling == false)
+            {
+                hit = Physics2D.Raycast(transform.position, lookDirection, distance, mask);
+                if (hit)
+                {
+                    StartGrappling();
+                }
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                StopGrappling();
+            }
+            if (lineRenderer.enabled = isGrappling) // lineRenderer.enabled is set to isGrappling
+            {
+                Vector3 grapplePosVec3 = new Vector3(grapplingPos.x, grapplingPos.y, transform.position.z);
+                lineRenderer.SetPosition(0, transform.position);
+                lineRenderer.SetPosition(1, grapplePosVec3);
+            }
         }
     }
 

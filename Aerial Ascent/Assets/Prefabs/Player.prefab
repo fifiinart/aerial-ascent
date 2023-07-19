@@ -103,18 +103,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1bc59b2666f89645ade34c7b68a18d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheckCollider: {fileID: 3071925376449105878}
-  speed: 5
-  defaultGravity: 3
-  horizontalDamping: 0.5
-  jumpForce: 15
-  fallGravityMultiplier: 2.5
-  variableJumpGravityMultiplier: 2
-  onGround: 0
-  groundCheckRadius: 0.2
-  mask:
+  groundMask:
     serializedVersion: 2
     m_Bits: 64
+  groundCheckCollider: {fileID: 3071925376449105878}
+  groundCheckRadius: 0.2
+  jumpForce: 15
+  bufferJumpTime: 0.2
+  coyoteJumpTime: 0.25
+  onGround: 0
+  cutJumpHeight: 0.5
+  speed: 5
+  horizontalDamping: 0.5
+  stoppedDamping: 0.5
+  turningDamping: 0.5
+  minHorizontalBounce: 40
+  minVerticalBounce: 30
+  gameOver: 0
 --- !u!50 &3071925375986180502
 Rigidbody2D:
   serializedVersion: 4
@@ -291,6 +296,9 @@ MonoBehaviour:
     m_Bits: 64
   lineRenderer: {fileID: 0}
   isGrappling: 0
+  grappleAngle: 0
+  actualSpeed: 0
+  directionToGrapplePos: {x: 0, y: 0}
 --- !u!1 &3071925376449105877
 GameObject:
   m_ObjectHideFlags: 0
