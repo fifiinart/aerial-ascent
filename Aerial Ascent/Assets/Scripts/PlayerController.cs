@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Grappling grappling;
-    private Vector2 startPos;
 
     [Header("Ground Collision")]
     public LayerMask groundMask;
@@ -41,26 +40,22 @@ public class PlayerController : MonoBehaviour
     [Range(0, 1)]
     public float turningDamping = 0.5f;
 
+    [Header("Bounce")]
+    public float minHorizontalBounce = 40f;
+    public float minVerticalBounce = 30f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         grappling = GetComponent<Grappling>();
-        startPos = transform.localPosition;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         onGround = CheckIfGrounded();
 
-        UpdateCoyoteJumpTimer();
 
-        UpdateBufferJumpTimer();
-
-        HandleCutJumps();
-
-        Jump();
 
         float velocity = CalculateDampedVelocity();
 
@@ -71,6 +66,15 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("SpeedY", rb.velocity.y);
         anim.SetBool("InAir", !onGround);
         anim.SetBool("Grappling", grappling.isGrappling);
+    }
+    void Update()
+    {
+        HandleCutJumps();
+
+        Jump();
+        UpdateCoyoteJumpTimer();
+
+        UpdateBufferJumpTimer();
     }
 
     private void FlipPlayer()
@@ -96,11 +100,11 @@ public class PlayerController : MonoBehaviour
         if (grappling.isGrappling)
             velocity *= 1; // don't damp grapple
         else if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01f)
-            velocity *= Mathf.Pow(1f - stoppedDamping, Time.deltaTime * 10f);
+            velocity *= Mathf.Pow(1f - stoppedDamping, Time.fixedDeltaTime * 10f);
         else if (Mathf.Sign(Input.GetAxisRaw("Horizontal")) != Mathf.Sign(velocity))
-            velocity *= Mathf.Pow(1f - turningDamping, Time.deltaTime * 10f);
+            velocity *= Mathf.Pow(1f - turningDamping, Time.fixedDeltaTime * 10f);
         else
-            velocity *= Mathf.Pow(1f - horizontalDamping, Time.deltaTime * 10f);
+            velocity *= Mathf.Pow(1f - horizontalDamping, Time.fixedDeltaTime * 10f);
         return velocity;
     }
 
@@ -121,17 +125,14 @@ public class PlayerController : MonoBehaviour
     private void HandleCutJumps()
     {
         if (Input.GetButtonUp("Jump"))
-        {
-            if (rb.velocity.y > 0)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * cutJumpHeight);
-            }
+        { 
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * cutJumpHeight);       
         }
     }
 
     private void UpdateBufferJumpTimer()
     {
-        bufferJumpTimer -= Time.deltaTime;
+        bufferJumpTimer -= Time.fixedDeltaTime;
         if (Input.GetButtonDown("Jump"))
         {
             bufferJumpTimer = bufferJumpTime;
@@ -140,7 +141,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateCoyoteJumpTimer()
     {
-        coyoteJumpTimer -= Time.deltaTime;
+        coyoteJumpTimer -= Time.fixedDeltaTime;
         if (CanJump())
         {
             coyoteJumpTimer = coyoteJumpTime;
@@ -161,5 +162,48 @@ public class PlayerController : MonoBehaviour
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundMask);
         return colliders.Length > 0;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (grappling.isGrappling)
+            grappling.StopGrappling();
+        if (collision.gameObject.CompareTag("Bouncy"))
+        {
+            HandleBounce(collision);
+        }
+    }
+
+    private void HandleBounce(Collision2D collision)
+    {
+        var contact = collision.GetContact(0);
+        var difference = (Vector2)transform.position - contact.point;
+        if (Mathf.Abs(difference.x) > Mathf.Abs(difference.y))
+        {
+            if (contact.relativeVelocity.x > 0)
+                // collide with left/right wall
+                rb.velocity = new Vector2(
+                    Mathf.Max(minHorizontalBounce, contact.relativeVelocity.x),
+                    Mathf.Abs(contact.relativeVelocity.y)
+                );
+            else
+                rb.velocity = new Vector2(
+                    Mathf.Min(-minHorizontalBounce, contact.relativeVelocity.x),
+                    Mathf.Abs(contact.relativeVelocity.y)
+                );
+        }
+        else
+        {
+            if (contact.relativeVelocity.y > 0)
+                rb.velocity = new Vector2(
+                    -contact.relativeVelocity.x,
+                    Mathf.Max(minVerticalBounce, contact.relativeVelocity.y)
+                );
+            else
+                rb.velocity = new Vector2(
+                    -contact.relativeVelocity.x,
+                    Mathf.Min(-minVerticalBounce, contact.relativeVelocity.y)
+                );
+        }
     }
 }
