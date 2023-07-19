@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         startPos = transform.localPosition;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         onGround = CheckIfGrounded();
 
@@ -96,11 +96,11 @@ public class PlayerController : MonoBehaviour
         if (grappling.isGrappling)
             velocity *= 1; // don't damp grapple
         else if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01f)
-            velocity *= Mathf.Pow(1f - stoppedDamping, Time.deltaTime * 10f);
+            velocity *= Mathf.Pow(1f - stoppedDamping, Time.fixedDeltaTime * 10f);
         else if (Mathf.Sign(Input.GetAxisRaw("Horizontal")) != Mathf.Sign(velocity))
-            velocity *= Mathf.Pow(1f - turningDamping, Time.deltaTime * 10f);
+            velocity *= Mathf.Pow(1f - turningDamping, Time.fixedDeltaTime * 10f);
         else
-            velocity *= Mathf.Pow(1f - horizontalDamping, Time.deltaTime * 10f);
+            velocity *= Mathf.Pow(1f - horizontalDamping, Time.fixedDeltaTime * 10f);
         return velocity;
     }
 
@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateBufferJumpTimer()
     {
-        bufferJumpTimer -= Time.deltaTime;
+        bufferJumpTimer -= Time.fixedDeltaTime;
         if (Input.GetButtonDown("Jump"))
         {
             bufferJumpTimer = bufferJumpTime;
@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateCoyoteJumpTimer()
     {
-        coyoteJumpTimer -= Time.deltaTime;
+        coyoteJumpTimer -= Time.fixedDeltaTime;
         if (CanJump())
         {
             coyoteJumpTimer = coyoteJumpTime;
