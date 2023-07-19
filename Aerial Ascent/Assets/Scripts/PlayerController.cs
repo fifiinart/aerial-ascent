@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Animations;
+using UnityEditor.TerrainTools;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -44,6 +45,9 @@ public class PlayerController : MonoBehaviour
     public float minHorizontalBounce = 40f;
     public float minVerticalBounce = 30f;
 
+    [Header("Game Over")]
+    public bool gameOver = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -53,28 +57,33 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        onGround = CheckIfGrounded();
+        if (!gameOver)
+        {
 
+            onGround = CheckIfGrounded();
 
+            float velocity = CalculateDampedVelocity();
 
-        float velocity = CalculateDampedVelocity();
+            rb.velocity = new Vector2(velocity, rb.velocity.y);
 
-        rb.velocity = new Vector2(velocity, rb.velocity.y);
-
-        FlipPlayer();
-        anim.SetFloat("SpeedX", Mathf.Abs(rb.velocity.x));
-        anim.SetFloat("SpeedY", rb.velocity.y);
-        anim.SetBool("InAir", !onGround);
-        anim.SetBool("Grappling", grappling.isGrappling);
+            FlipPlayer();
+            anim.SetFloat("SpeedX", Mathf.Abs(rb.velocity.x));
+            anim.SetFloat("SpeedY", rb.velocity.y);
+            anim.SetBool("InAir", !onGround);
+            anim.SetBool("Grappling", grappling.isGrappling);
+        }
     }
     void Update()
     {
-        HandleCutJumps();
+        if (!gameOver)
+        {
+            HandleCutJumps();
 
-        Jump();
-        UpdateCoyoteJumpTimer();
+            Jump();
+            UpdateCoyoteJumpTimer();
 
-        UpdateBufferJumpTimer();
+            UpdateBufferJumpTimer();
+        }
     }
 
     private void FlipPlayer()
@@ -125,8 +134,8 @@ public class PlayerController : MonoBehaviour
     private void HandleCutJumps()
     {
         if (Input.GetButtonUp("Jump"))
-        { 
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * cutJumpHeight);       
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * cutJumpHeight);
         }
     }
 
@@ -172,6 +181,10 @@ public class PlayerController : MonoBehaviour
         {
             HandleBounce(collision);
         }
+        else if (collision.gameObject.CompareTag("Deadly"))
+        {
+            KillPlayer(collision);
+        }
     }
 
     private void HandleBounce(Collision2D collision)
@@ -205,5 +218,11 @@ public class PlayerController : MonoBehaviour
                     Mathf.Min(-minVerticalBounce, contact.relativeVelocity.y)
                 );
         }
+    }
+
+    private void KillPlayer(Collision2D collision)
+    {
+        gameOver = true;
+        rb.velocity = new Vector2(0,0);
     }
 }
