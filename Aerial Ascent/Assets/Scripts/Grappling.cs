@@ -19,6 +19,10 @@ public class Grappling : MonoBehaviour
     private Rigidbody2D rb;
     public bool inControl;
     private PlayerController playerController;
+    public CameraShake camShake;
+    public float shakeTime = 0.5f;
+    public float shakeAmp = 1f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +48,7 @@ public class Grappling : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0) && isGrappling == false && inControl)
             {
+                camShake.cameraShake(shakeTime, shakeAmp);
                 hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
                 if (hit)
                 {
