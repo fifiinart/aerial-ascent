@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3495676865173451168
+--- !u!1 &3709386755188741027
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3495676865173451170}
-  - component: {fileID: 3495676865173451169}
-  - component: {fileID: 3495676865173451171}
+  - component: {fileID: 3709386755188741022}
+  - component: {fileID: 3709386755188741021}
+  - component: {fileID: 3709386755188741020}
   m_Layer: 8
   m_Name: Ring
-  m_TagString: Tile
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3495676865173451170
+--- !u!4 &3709386755188741022
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3495676865173451168}
+  m_GameObject: {fileID: 3709386755188741027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.24, y: 2.74, z: 0}
+  m_LocalPosition: {x: 3.8534954, y: 5.820247, z: 0}
   m_LocalScale: {x: 1.7326313, y: 1.7717824, z: 2.5589}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3495676865173451169
+--- !u!212 &3709386755188741021
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3495676865173451168}
+  m_GameObject: {fileID: 3709386755188741027}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -85,13 +85,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &3495676865173451171
+--- !u!58 &3709386755188741020
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3495676865173451168}
+  m_GameObject: {fileID: 3709386755188741027}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}

@@ -8,6 +8,7 @@ TagManager:
   - Bouncy
   - Deadly
   - CheckPoint
+  - Ring
   layers:
   - Default
   - TransparentFX

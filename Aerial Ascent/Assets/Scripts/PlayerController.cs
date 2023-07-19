@@ -56,6 +56,8 @@ public class PlayerController : MonoBehaviour
     public float timeBeforeRespawn = 0.5f;
     private float respawnTimer = 0;
 
+    private Vector2 storedVel;
+
 
     void Start()
     {
@@ -263,6 +265,10 @@ public class PlayerController : MonoBehaviour
             Checkpoint checkpoint = collision.gameObject.GetComponent<Checkpoint>();
             spawnPosition = (Vector2) collision.transform.position;
             checkpoint.Activate();
+        }
+        else if (collision.gameObject.CompareTag("Ring"))
+        {
+            grappling.StopGrappling();
         }
     }
 }
