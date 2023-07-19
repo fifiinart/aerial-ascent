@@ -72,10 +72,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3071925375986180523}
   - component: {fileID: 3071925375986180503}
+  - component: {fileID: 3071925375986180524}
   - component: {fileID: 3071925375986180502}
   - component: {fileID: 3071925375986180501}
   - component: {fileID: 3071925375986180525}
-  - component: {fileID: 3071925375986180524}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -139,6 +139,35 @@ MonoBehaviour:
   gameOver: 0
   spawnPosition: {x: 0, y: 0}
   timeBeforeRespawn: 0.5
+--- !u!114 &3071925375986180524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3071925375986180515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 023645f585c68d647b49ce48e3f0306f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  distance: 15
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  canGrappleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  cannotGrapple:
+    serializedVersion: 2
+    m_Bits: 0
+  lineRenderer: {fileID: 0}
+  isGrappling: 0
+  grappleAngle: 0
+  actualSpeed: 0
+  directionToGrapplePos: {x: 0, y: 0}
+  inControl: 0
 --- !u!50 &3071925375986180502
 Rigidbody2D:
   serializedVersion: 4
@@ -275,29 +304,6 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &3071925375986180524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3071925375986180515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 023645f585c68d647b49ce48e3f0306f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  distance: 15
-  mask:
-    serializedVersion: 2
-    m_Bits: 64
-  lineRenderer: {fileID: 0}
-  isGrappling: 0
-  grappleAngle: 0
-  actualSpeed: 0
-  directionToGrapplePos: {x: 0, y: 0}
-  inControl: 0
 --- !u!1 &3071925376449105877
 GameObject:
   m_ObjectHideFlags: 0
