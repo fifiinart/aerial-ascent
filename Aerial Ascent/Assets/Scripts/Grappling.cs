@@ -44,14 +44,14 @@ public class Grappling : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0) && isGrappling == false && inControl)
             {
-                hit = Physics2D.Raycast(transform.position, lookDirection, distance, groundMask);
+                hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
                 if (hit)
                 {
                     StartGrappling();
                 }
                 else
                 {
-                    hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
+                    hit = Physics2D.Raycast(transform.position, lookDirection, distance, groundMask);
                     if (hit)
                     {
                         StartGrappling();
