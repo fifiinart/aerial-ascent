@@ -16,12 +16,14 @@ public class Grappling : MonoBehaviour
     public float actualSpeed = 0f;
     public Vector2 directionToGrapplePos;
     private Rigidbody2D rb;
+    public bool inControl;
 
     // Start is called before the first frame update
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();   
         rb = GetComponent<Rigidbody2D>();
+        inControl = false;
     }
 
     // Update is called once per frame
@@ -36,7 +38,7 @@ public class Grappling : MonoBehaviour
 
         Debug.DrawRay(transform.position, lookDirection);
         
-        if (Input.GetMouseButtonDown(0) && isGrappling == false)
+        if (Input.GetMouseButtonDown(0) && isGrappling == false && inControl)
         {
             hit = Physics2D.Raycast(transform.position, lookDirection, distance, mask);
             if (hit)
@@ -55,6 +57,14 @@ public class Grappling : MonoBehaviour
             lineRenderer.SetPosition(0, transform.position);
             lineRenderer.SetPosition(1, grapplePosVec3);
         }
+    }
+
+    public void PlayerInControl()
+    {
+        print("in control");
+        // ...give player ability to control grappling hook
+        inControl = true;
+
     }
 
     public void StopGrappling()
