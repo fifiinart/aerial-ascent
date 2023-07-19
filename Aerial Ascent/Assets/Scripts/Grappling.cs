@@ -16,6 +16,7 @@ public class Grappling : MonoBehaviour
     public float actualSpeed = 0f;
     public Vector2 directionToGrapplePos;
     private Rigidbody2D rb;
+    public bool inControl;
     private PlayerController playerController;
 
     // Start is called before the first frame update
@@ -23,13 +24,13 @@ public class Grappling : MonoBehaviour
     {
         lineRenderer = GetComponent<LineRenderer>();   
         rb = GetComponent<Rigidbody2D>();
+        inControl = false;
         playerController = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (!playerController.gameOver)
         {
             //get mouse pos
@@ -63,9 +64,16 @@ public class Grappling : MonoBehaviour
         }
     }
 
+    public void PlayerInControl()
+    {
+        print("in control");
+        // ...give player ability to control grappling hook
+        inControl = true;
+
+    }
+
     public void StopGrappling()
     {
-        //Debug.Log("Stop Grappling");
         //stop Grappling
         isGrappling = false;
 
@@ -82,7 +90,6 @@ public class Grappling : MonoBehaviour
         float dotProduct = Vector2.Dot(rb.velocity, directionToGrapplePos.normalized);
         actualSpeed = Mathf.Max(speed, dotProduct); // maintain rb velocity if we have more than speed
     }
-
     void FixedUpdate()
     {
         if (isGrappling)
