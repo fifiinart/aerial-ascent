@@ -8,6 +8,9 @@ public class CameraShake : MonoBehaviour
     public CinemachineVirtualCamera cam;
     private CinemachineBasicMultiChannelPerlin noise;
     public float shakeLeft = 0;
+
+    public float time;
+    public float amplitude;
     /*    
 
 public IEnumerator Shake (float duration, float magnitude)
@@ -49,7 +52,7 @@ public IEnumerator Shake (float duration, float magnitude)
         }
     }
 
-    public void cameraShake(float time, float amplitude, bool on = true)
+    public void cameraShake(bool on = true)
     {
         cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude;
         shakeLeft = time;

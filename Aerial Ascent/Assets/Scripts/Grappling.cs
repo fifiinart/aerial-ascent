@@ -10,7 +10,6 @@ public class Grappling : MonoBehaviour
     RaycastHit2D hit;
     public LayerMask groundMask;
     public LayerMask canGrappleMask;
-    public LayerMask cannotGrapple;
     public LineRenderer lineRenderer;
     private Vector2 grapplingPos;
     public bool isGrappling = false;
@@ -21,8 +20,6 @@ public class Grappling : MonoBehaviour
     public bool inControl;
     private PlayerController playerController;
     public CameraShake camShake;
-    public float shakeTime = 0.5f;
-    public float shakeAmp = 1f;
 
 
     // Start is called before the first frame update
@@ -49,21 +46,19 @@ public class Grappling : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0) && isGrappling == false && inControl)
             {
-                camShake.cameraShake(shakeTime, shakeAmp);
+                camShake.cameraShake();
                 hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
                 if (hit)
                 {
                     StartGrappling();
                 }
-                hit = Physics2D.Raycast(transform.position, lookDirection, distance, cannotGrapple);
-                if (!hit)
+                else
                 {
-
-                        hit = Physics2D.Raycast(transform.position, lookDirection, distance, groundMask);
-                        if (hit)
-                        {
-                            StartGrappling();
-                        }
+                    hit = Physics2D.Raycast(transform.position, lookDirection, distance, groundMask);
+                    if (hit)
+                    {
+                        StartGrappling();
+                    }
                 }
             }
 
