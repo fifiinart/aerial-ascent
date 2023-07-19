@@ -86,7 +86,8 @@ public class Grappling : MonoBehaviour
         isGrappling = true;
 
         directionToGrapplePos = grapplingPos - (Vector2)transform.position;
-        grappleAngle = Vector2.Angle(transform.rotation.eulerAngles, directionToGrapplePos);
+        Vector2 _ = new Vector2(Mathf.Abs(directionToGrapplePos.x), directionToGrapplePos.y);
+        grappleAngle = Vector2.Angle(Vector2.right, _);
         float dotProduct = Vector2.Dot(rb.velocity, directionToGrapplePos.normalized);
         actualSpeed = Mathf.Max(speed, dotProduct); // maintain rb velocity if we have more than speed
     }
