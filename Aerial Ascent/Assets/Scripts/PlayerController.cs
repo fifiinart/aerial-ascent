@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 spawnPosition = Vector2.zero;
     public float timeBeforeRespawn = 0.5f;
     private float respawnTimer = 0;
-    private CircleCollider2D cc;
+
 
     void Start()
     {
@@ -58,7 +58,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         grappling = GetComponent<Grappling>();
-        cc = GetComponent<CircleCollider2D>();
     }
 
     void FixedUpdate()
@@ -244,8 +243,9 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("CheckPoint"))
         {
+            Checkpoint checkpoint = collision.gameObject.GetComponent<Checkpoint>();
             spawnPosition = (Vector2) collision.transform.position;
-            cc.enabled = false;
+            checkpoint.used = true;
         }
     }
 }
