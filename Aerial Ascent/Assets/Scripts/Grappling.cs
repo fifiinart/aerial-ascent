@@ -41,7 +41,7 @@ public class Grappling : MonoBehaviour
 
             Debug.DrawRay(transform.position, lookDirection);
 
-            if (Input.GetMouseButtonDown(0) && isGrappling == false)
+            if (Input.GetMouseButtonDown(0) && isGrappling == false && inControl)
             {
                 hit = Physics2D.Raycast(transform.position, lookDirection, distance, mask);
                 if (hit)
