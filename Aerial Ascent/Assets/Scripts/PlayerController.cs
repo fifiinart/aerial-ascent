@@ -101,6 +101,11 @@ public class PlayerController : MonoBehaviour
             gameOver = false;
             transform.position = spawnPosition;
         }
+        if (transform.position.y < -20)
+        {
+            gameOver = false;
+            transform.position = spawnPosition;
+        }
     }
 
     private void FlipPlayer()
