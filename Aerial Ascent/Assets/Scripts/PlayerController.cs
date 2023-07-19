@@ -55,13 +55,7 @@ public class PlayerController : MonoBehaviour
     {
         onGround = CheckIfGrounded();
 
-        UpdateCoyoteJumpTimer();
 
-        UpdateBufferJumpTimer();
-
-        HandleCutJumps();
-
-        Jump();
 
         float velocity = CalculateDampedVelocity();
 
@@ -72,6 +66,15 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("SpeedY", rb.velocity.y);
         anim.SetBool("InAir", !onGround);
         anim.SetBool("Grappling", grappling.isGrappling);
+    }
+    void Update()
+    {
+        HandleCutJumps();
+
+        Jump();
+        UpdateCoyoteJumpTimer();
+
+        UpdateBufferJumpTimer();
     }
 
     private void FlipPlayer()
@@ -122,11 +125,8 @@ public class PlayerController : MonoBehaviour
     private void HandleCutJumps()
     {
         if (Input.GetButtonUp("Jump"))
-        {
-            if (rb.velocity.y > 0)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * cutJumpHeight);
-            }
+        { 
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * cutJumpHeight);       
         }
     }
 
