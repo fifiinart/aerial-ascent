@@ -18767,6 +18767,10 @@ PrefabInstance:
       propertyPath: ceilingCheckCollider
       value: 
       objectReference: {fileID: 1428348386}
+    - target: {fileID: 3071925375986180503, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
+      propertyPath: canGrappleMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 3071925375986180515, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
       propertyPath: m_Name
       value: Player

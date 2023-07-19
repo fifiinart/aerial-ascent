@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     public float cutJumpHeight = 0.5f;
 
     [Header("Movement")]
+    public LayerMask canGrappleMask;
     public float speed = 1;
 
     // How much momentum should be preserved within 10 seconds
@@ -223,10 +224,10 @@ public class PlayerController : MonoBehaviour
 
         // check all circlecasts
         rb.velocity = Vector2.zero;
-        Collider2D[] groundColliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundMask);
-        Collider2D[] ceilingColliders = Physics2D.OverlapCircleAll(ceilingCheckCollider.position, groundCheckRadius, groundMask);
-        Collider2D[] leftColliders = Physics2D.OverlapCircleAll(leftCheckCollider.position, groundCheckRadius, groundMask);
-        Collider2D[] rightColliders = Physics2D.OverlapCircleAll(rightCheckCollider.position, groundCheckRadius, groundMask);
+        Collider2D[] groundColliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, canGrappleMask);
+        Collider2D[] ceilingColliders = Physics2D.OverlapCircleAll(ceilingCheckCollider.position, groundCheckRadius, canGrappleMask);
+        Collider2D[] leftColliders = Physics2D.OverlapCircleAll(leftCheckCollider.position, groundCheckRadius, canGrappleMask);
+        Collider2D[] rightColliders = Physics2D.OverlapCircleAll(rightCheckCollider.position, groundCheckRadius, canGrappleMask);
 
         if (rightColliders.Length > 0)
         {
