@@ -264,7 +264,7 @@ public class PlayerController : MonoBehaviour
 
     private void KillPlayer()
     {
-        respawnTimer = timeBeforeRespawn;
+        if (!gameOver) respawnTimer = timeBeforeRespawn;
         gameOver = true;
         rb.velocity = new Vector2(0, 0);
         anim.SetBool("Dead", true);
