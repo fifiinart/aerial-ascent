@@ -259,6 +259,9 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    [ContextMenu("Set Spawn to Current Position")]
+    public void setSpawnToCurrentPosition() { spawnPosition = new Vector2(transform.position.x, transform.position.y);}
+
     private void KillPlayer()
     {
         respawnTimer = timeBeforeRespawn;
