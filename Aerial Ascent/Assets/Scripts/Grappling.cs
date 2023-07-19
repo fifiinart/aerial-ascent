@@ -28,11 +28,8 @@ public class Grappling : MonoBehaviour
     void Update()
     {
         
-        //get mouse pos
-        //get look direction
-
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 lookDirection = (mousePos - (Vector2)transform.position).normalized;
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //get mouse pos
+        Vector2 lookDirection = (mousePos - (Vector2)transform.position).normalized; //get look direction
 
         Debug.DrawRay(transform.position, lookDirection);
         
@@ -45,7 +42,7 @@ public class Grappling : MonoBehaviour
             }
         }
 
-        if(Input.GetMouseButtonUp(0))
+        if(Input.GetMouseButtonUp(0)) //stop on release
         {
             StopGrappling();
         }
@@ -59,6 +56,7 @@ public class Grappling : MonoBehaviour
 
     public void StopGrappling()
     {
+        //Debug.Log("Stop Grappling");
         //stop Grappling
         isGrappling = false;
 
