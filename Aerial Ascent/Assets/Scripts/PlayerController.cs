@@ -89,10 +89,10 @@ public class PlayerController : MonoBehaviour
 
             UpdateBufferJumpTimer();
         }
-        else if (timeBeforeRespawn > 0)
+        else if (respawnTimer > 0)
         {
-            timeBeforeRespawn -= Time.deltaTime;
-        } else if (timeBeforeRespawn < 0)
+            respawnTimer -= Time.deltaTime;
+        } else if (respawnTimer < 0)
         {
             gameOver = false;
             transform.position = spawnPosition;
@@ -235,9 +235,9 @@ public class PlayerController : MonoBehaviour
 
     private void KillPlayer(Collision2D collision)
     {
+        respawnTimer = timeBeforeRespawn;
         gameOver = true;
         rb.velocity = new Vector2(0, 0);
-        respawnTimer = timeBeforeRespawn;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
