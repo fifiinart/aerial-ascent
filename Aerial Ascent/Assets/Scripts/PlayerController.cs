@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         grappling = GetComponent<Grappling>();
+        cc = GetComponent<CircleCollider2D>();
     }
 
     void FixedUpdate()
