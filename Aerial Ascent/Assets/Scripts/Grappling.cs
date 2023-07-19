@@ -8,7 +8,8 @@ public class Grappling : MonoBehaviour
     public float speed = 20f;
     public float distance = 10f;
     RaycastHit2D hit;
-    public LayerMask mask;
+    public LayerMask groundMask;
+    public LayerMask canGrappleMask;
     public LineRenderer lineRenderer;
     private Vector2 grapplingPos;
     public bool isGrappling = false;
@@ -43,10 +44,18 @@ public class Grappling : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0) && isGrappling == false && inControl)
             {
-                hit = Physics2D.Raycast(transform.position, lookDirection, distance, mask);
+                hit = Physics2D.Raycast(transform.position, lookDirection, distance, groundMask);
                 if (hit)
                 {
                     StartGrappling();
+                }
+                else
+                {
+                    hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
+                    if (hit)
+                    {
+                        StartGrappling();
+                    }
                 }
             }
 
@@ -90,6 +99,7 @@ public class Grappling : MonoBehaviour
         grappleAngle = Vector2.Angle(Vector2.right, _);
         float dotProduct = Vector2.Dot(rb.velocity, directionToGrapplePos.normalized);
         actualSpeed = Mathf.Max(speed, dotProduct); // maintain rb velocity if we have more than speed
+
     }
     void FixedUpdate()
     {
@@ -100,3 +110,4 @@ public class Grappling : MonoBehaviour
         }
     }
 }
+
