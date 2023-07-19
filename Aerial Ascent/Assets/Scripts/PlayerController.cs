@@ -47,9 +47,14 @@ public class PlayerController : MonoBehaviour
 
     [Header("Game Over")]
     public bool gameOver = false;
+    public Vector2 spawnPosition = Vector2.zero;
+    public float timeBeforeRespawn = 0.5f;
+    private float respawnTimer = 0;
+    private CircleCollider2D cc;
 
     void Start()
     {
+        transform.position = spawnPosition;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         grappling = GetComponent<Grappling>();
@@ -83,6 +88,14 @@ public class PlayerController : MonoBehaviour
             UpdateCoyoteJumpTimer();
 
             UpdateBufferJumpTimer();
+        }
+        else if (timeBeforeRespawn > 0)
+        {
+            timeBeforeRespawn -= Time.deltaTime;
+        } else if (timeBeforeRespawn < 0)
+        {
+            gameOver = false;
+            transform.position = spawnPosition;
         }
     }
 
@@ -223,6 +236,15 @@ public class PlayerController : MonoBehaviour
     private void KillPlayer(Collision2D collision)
     {
         gameOver = true;
-        rb.velocity = new Vector2(0,0);
+        rb.velocity = new Vector2(0, 0);
+        respawnTimer = timeBeforeRespawn;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("CheckPoint"))
+        {
+            spawnPosition = (Vector2) collision.transform.position;
+            cc.enabled = false;
+        }
     }
 }
