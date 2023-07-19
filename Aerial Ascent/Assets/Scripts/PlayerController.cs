@@ -7,13 +7,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Components")]
     private Rigidbody2D rb;
-    private Animator anim;
+    public Transform sprite;
+    public Animator anim;
     private Grappling grappling;
 
     [Header("Ground Collision")]
     public LayerMask groundMask;
     public Transform groundCheckCollider;
+    public Transform ceilingCheckCollider;
+    public Transform leftCheckCollider;
+    public Transform rightCheckCollider;
     public float groundCheckRadius;
 
     [Header("Jump")]
@@ -56,7 +61,6 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = spawnPosition;
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
         grappling = GetComponent<Grappling>();
     }
 
@@ -65,7 +69,7 @@ public class PlayerController : MonoBehaviour
         if (!gameOver)
         {
 
-            onGround = CheckIfGrounded();
+            CheckCollisions();
 
             float velocity = CalculateDampedVelocity();
 
@@ -106,11 +110,11 @@ public class PlayerController : MonoBehaviour
             float y = grappling.directionToGrapplePos.x < 0 ? 180f : 0f;
             float z = grappling.grappleAngle;
 
-            transform.rotation = Quaternion.Euler(0, y, z);
+            sprite.rotation = Quaternion.Euler(0, y, z);
         }
         else
         {
-            transform.rotation = Quaternion.Euler(0, (float)(Input.GetAxisRaw("Horizontal") < 0.01f ? 180f : 0f), 0);
+            sprite.rotation = Quaternion.Euler(0, (float)(Input.GetAxisRaw("Horizontal") < 0.01f ? 180f : 0f), 0);
         }
     }
 
@@ -175,7 +179,7 @@ public class PlayerController : MonoBehaviour
         return onGround || grappling.isGrappling;
     }
 
-    private bool CheckIfGrounded()
+    private void CheckCollisions()
     {
         //Vector2 v2GroundedBoxCheckPosition = (Vector2)transform.position + new Vector2(0, -0.01f);
         //Vector2 v2GroundedBoxCheckScale = (Vector2)transform.localScale + new Vector2(-0.02f, 0);
@@ -183,7 +187,7 @@ public class PlayerController : MonoBehaviour
         //return bGrounded;
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundMask);
-        return colliders.Length > 0;
+        onGround = colliders.Length > 0;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -202,35 +206,43 @@ public class PlayerController : MonoBehaviour
 
     private void HandleBounce(Collision2D collision)
     {
-        var contact = collision.GetContact(0);
-        var difference = (Vector2)transform.position - contact.point;
-        if (Mathf.Abs(difference.x) > Mathf.Abs(difference.y))
+
+        // check all circlecasts
+        rb.velocity = Vector2.zero;
+        Collider2D[] groundColliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundMask);
+        Collider2D[] ceilingColliders = Physics2D.OverlapCircleAll(ceilingCheckCollider.position, groundCheckRadius, groundMask);
+        Collider2D[] leftColliders = Physics2D.OverlapCircleAll(leftCheckCollider.position, groundCheckRadius, groundMask);
+        Collider2D[] rightColliders = Physics2D.OverlapCircleAll(rightCheckCollider.position, groundCheckRadius, groundMask);
+
+        if (rightColliders.Length > 0)
         {
-            if (contact.relativeVelocity.x > 0)
-                // collide with left/right wall
-                rb.velocity = new Vector2(
-                    Mathf.Max(minHorizontalBounce, contact.relativeVelocity.x),
-                    Mathf.Abs(contact.relativeVelocity.y)
-                );
-            else
-                rb.velocity = new Vector2(
-                    Mathf.Min(-minHorizontalBounce, contact.relativeVelocity.x),
-                    Mathf.Abs(contact.relativeVelocity.y)
-                );
+            rb.velocity += new Vector2(
+                Mathf.Min(-minHorizontalBounce, collision.relativeVelocity.x),
+                Mathf.Abs(collision.relativeVelocity.y)
+            );
         }
-        else
+        else if (leftColliders.Length > 0)
         {
-            if (contact.relativeVelocity.y > 0)
-                rb.velocity = new Vector2(
-                    -contact.relativeVelocity.x,
-                    Mathf.Max(minVerticalBounce, contact.relativeVelocity.y)
-                );
-            else
-                rb.velocity = new Vector2(
-                    -contact.relativeVelocity.x,
-                    Mathf.Min(-minVerticalBounce, contact.relativeVelocity.y)
-                );
+            rb.velocity += new Vector2(
+                Mathf.Max(minHorizontalBounce, collision.relativeVelocity.x),
+                Mathf.Abs(collision.relativeVelocity.y)
+            );
         }
+        else if (groundColliders.Length > 0)
+        {
+            rb.velocity += new Vector2(
+                -collision.relativeVelocity.x,
+                Mathf.Max(minVerticalBounce, collision.relativeVelocity.y)
+            );
+        }
+        else if (ceilingColliders.Length > 0)
+        {
+            rb.velocity += new Vector2(
+                -collision.relativeVelocity.x,
+                Mathf.Min(-minVerticalBounce, collision.relativeVelocity.y)
+            );
+        }
+
     }
 
     private void KillPlayer(Collision2D collision)
