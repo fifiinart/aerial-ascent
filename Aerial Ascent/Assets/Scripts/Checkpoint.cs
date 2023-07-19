@@ -6,19 +6,19 @@ public class Checkpoint : MonoBehaviour
 {
     public bool used = false;
     private CircleCollider2D cc;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         cc = GetComponent<CircleCollider2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Activate()
     {
-        if(used)
-        {
-            cc.enabled = false;
-        }
+        used = true;
+        cc.enabled = false;
+        anim.SetTrigger("CheckpointActivate");
     }
 }

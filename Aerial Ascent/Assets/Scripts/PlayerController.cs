@@ -257,7 +257,7 @@ public class PlayerController : MonoBehaviour
         {
             Checkpoint checkpoint = collision.gameObject.GetComponent<Checkpoint>();
             spawnPosition = (Vector2) collision.transform.position;
-            checkpoint.used = true;
+            checkpoint.Activate();
         }
     }
 }

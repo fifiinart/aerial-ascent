@@ -115,15 +115,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1bc59b2666f89645ade34c7b68a18d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  anim: {fileID: 0}
+  sprite: {fileID: 2223238143623891010}
+  anim: {fileID: 2516790837781986537}
   groundMask:
     serializedVersion: 2
     m_Bits: 64
   groundCheckCollider: {fileID: 3071925376449105878}
-  ceilingCheckCollider: {fileID: 0}
-  leftCheckCollider: {fileID: 0}
-  rightCheckCollider: {fileID: 0}
+  ceilingCheckCollider: {fileID: 5210537802729989586}
+  leftCheckCollider: {fileID: 5275954622045003830}
+  rightCheckCollider: {fileID: 5879772292096273578}
   groundCheckRadius: 0.2
   jumpForce: 15
   bufferJumpTime: 0.2
