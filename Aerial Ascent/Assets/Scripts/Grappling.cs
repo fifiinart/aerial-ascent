@@ -10,6 +10,7 @@ public class Grappling : MonoBehaviour
     RaycastHit2D hit;
     public LayerMask groundMask;
     public LayerMask canGrappleMask;
+    public LayerMask cannotGrapple;
     public LineRenderer lineRenderer;
     private Vector2 grapplingPos;
     public bool isGrappling = false;
@@ -54,13 +55,15 @@ public class Grappling : MonoBehaviour
                 {
                     StartGrappling();
                 }
-                else
+                hit = Physics2D.Raycast(transform.position, lookDirection, distance, cannotGrapple);
+                if (!hit)
                 {
-                    hit = Physics2D.Raycast(transform.position, lookDirection, distance, groundMask);
-                    if (hit)
-                    {
-                        StartGrappling();
-                    }
+
+                        hit = Physics2D.Raycast(transform.position, lookDirection, distance, groundMask);
+                        if (hit)
+                        {
+                            StartGrappling();
+                        }
                 }
             }
 

@@ -100,14 +100,21 @@ public class PlayerController : MonoBehaviour
             respawnTimer -= Time.deltaTime;
         } else if (respawnTimer < 0)
         {
-            gameOver = false;
-            transform.position = spawnPosition;
+            RespawnPlayer();
         }
+
+
         if (transform.position.y < -20)
         {
-            gameOver = false;
-            transform.position = spawnPosition;
+            KillPlayer();
         }
+    }
+
+    private void RespawnPlayer()
+    {
+        gameOver = false;
+        transform.position = spawnPosition;
+        anim.SetBool("Dead", false);
     }
 
     private void FlipPlayer()
@@ -207,7 +214,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Deadly"))
         {
-            KillPlayer(collision);
+            KillPlayer();
         }
     }
 
@@ -252,11 +259,15 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void KillPlayer(Collision2D collision)
+    [ContextMenu("Set Spawn to Current Position")]
+    public void setSpawnToCurrentPosition() { spawnPosition = new Vector2(transform.position.x, transform.position.y);}
+
+    private void KillPlayer()
     {
-        respawnTimer = timeBeforeRespawn;
+        if (!gameOver) respawnTimer = timeBeforeRespawn;
         gameOver = true;
         rb.velocity = new Vector2(0, 0);
+        anim.SetBool("Dead", true);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
