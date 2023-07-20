@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public Transform sprite;
     public Animator anim;
     private Grappling grappling;
+    public ParticleSystem dust;
 
     [Header("Ground Collision")]
     public LayerMask groundMask;
@@ -117,6 +118,11 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Dead", false);
     }
 
+    void CreateDust()
+    {
+        dust.Play();
+    }
+
     public void PlayerInControl()
     {
         print("player can move");
@@ -148,9 +154,13 @@ public class PlayerController : MonoBehaviour
         else if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01f)
             velocity *= Mathf.Pow(1f - stoppedDamping, Time.fixedDeltaTime * 10f);
         else if (Mathf.Sign(Input.GetAxisRaw("Horizontal")) != Mathf.Sign(velocity))
+        {
             velocity *= Mathf.Pow(1f - turningDamping, Time.fixedDeltaTime * 10f);
+        }
         else
+        {
             velocity *= Mathf.Pow(1f - horizontalDamping, Time.fixedDeltaTime * 10f);
+        }
         return velocity;
     }
 
@@ -165,6 +175,7 @@ public class PlayerController : MonoBehaviour
             {
                 grappling.StopGrappling();
             }
+            CreateDust();
         }
     }
 
@@ -288,4 +299,6 @@ public class PlayerController : MonoBehaviour
             grappling.StopGrappling();
         }
     }
+
+    
 }
