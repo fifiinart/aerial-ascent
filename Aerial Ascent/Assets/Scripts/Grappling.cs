@@ -21,6 +21,7 @@ public class Grappling : MonoBehaviour
     public bool inControl;
     private PlayerController playerController;
     public CameraShake camShake;
+    public TrailRenderer tr;
 
 
     // Start is called before the first frame update
@@ -30,6 +31,7 @@ public class Grappling : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         inControl = false;
         playerController = GetComponent<PlayerController>();
+        tr = GetComponent<TrailRenderer>();
     }
 
     // Update is called once per frame
@@ -53,6 +55,7 @@ public class Grappling : MonoBehaviour
                 {
                     camShake.cameraShake();
                     StartGrappling();
+                    tr.enabled = true;
                 }
             }
 
@@ -60,6 +63,7 @@ public class Grappling : MonoBehaviour
             if (Input.GetMouseButtonUp(0))
             {
                 StopGrappling();
+                tr.enabled = false;
             }
             if (lineRenderer.enabled = isGrappling) // lineRenderer.enabled is set to isGrappling
             {
