@@ -83,10 +83,13 @@ public class Grappling : MonoBehaviour
 
     public void PlayerInControl()
     {
-        print("in control");
-        // ...give player ability to control grappling hook
         inControl = true;
 
+    }
+
+    public void PlayerWin()
+    {
+        //...
     }
 
     public void StopGrappling()

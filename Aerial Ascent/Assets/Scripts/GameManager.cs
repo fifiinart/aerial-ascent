@@ -26,6 +26,12 @@ public class GameManager : MonoBehaviour
         PlayerInControl.Invoke();
     }
 
+    public void Win()
+    {
+        timerActive = false;
+        speedrunTimerText.color = Color.green;
+    }
+
     public void SetupSpeedrunTimer()
     {
         timerActive = true;
