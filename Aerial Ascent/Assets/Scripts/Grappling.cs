@@ -46,10 +46,10 @@ public class Grappling : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0) && isGrappling == false && inControl)
             {
-                camShake.cameraShake();
                 hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
                 if (hit)
                 {
+                    camShake.cameraShake();
                     StartGrappling();
                 }
                 else
@@ -58,6 +58,8 @@ public class Grappling : MonoBehaviour
                     if (hit)
                     {
                         StartGrappling();
+                        camShake.cameraShake();
+
                     }
                 }
             }

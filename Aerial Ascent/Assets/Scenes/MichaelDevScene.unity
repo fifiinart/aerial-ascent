@@ -310,6 +310,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 94189152}
   shakeLeft: 0
+  time: 0.5
+  amplitude: 3
 --- !u!1 &113456830
 GameObject:
   m_ObjectHideFlags: 0
@@ -15547,7 +15549,7 @@ GameObject:
   - component: {fileID: 787454007}
   - component: {fileID: 787454006}
   - component: {fileID: 787454005}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Bouncy Tilemap
   m_TagString: Bouncy
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -18657,6 +18659,10 @@ PrefabInstance:
       propertyPath: ceilingCheckCollider
       value: 
       objectReference: {fileID: 178748155}
+    - target: {fileID: 3071925375986180503, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
+      propertyPath: canGrappleMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 3071925375986180515, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -18707,7 +18713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3071925375986180524, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
       propertyPath: speed
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3071925375986180524, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
       propertyPath: camShake
