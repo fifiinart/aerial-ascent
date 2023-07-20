@@ -139,6 +139,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 174919102}
     - target: {fileID: 3071925375986180503, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
+      propertyPath: dust
+      value: 
+      objectReference: {fileID: 1029660661}
+    - target: {fileID: 3071925375986180503, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
@@ -1979,7 +1983,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
