@@ -55,7 +55,6 @@ public class Grappling : MonoBehaviour
                 {
                     camShake.cameraShake();
                     StartGrappling();
-                    tr.enabled = true;
                 }
             }
 
@@ -63,7 +62,6 @@ public class Grappling : MonoBehaviour
             if (Input.GetMouseButtonUp(0))
             {
                 StopGrappling();
-                tr.enabled = false;
             }
             if (lineRenderer.enabled = isGrappling) // lineRenderer.enabled is set to isGrappling
             {
@@ -88,6 +86,7 @@ public class Grappling : MonoBehaviour
         isGrappling = false;
 
         grappleAngle = 0f;
+        tr.emitting = false;
     }
 
     public void StartGrappling()
@@ -99,7 +98,9 @@ public class Grappling : MonoBehaviour
         Vector2 _ = new Vector2(Mathf.Abs(directionToGrapplePos.x), directionToGrapplePos.y);
         grappleAngle = Vector2.Angle(Vector2.right, _);
         float dotProduct = Vector2.Dot(rb.velocity, directionToGrapplePos.normalized);
-        actualSpeed = Mathf.Max(speed, dotProduct); // maintain rb velocity if we have more than speed
+        actualSpeed = Mathf.Max(speed, dotProduct);
+        tr.Clear();
+        tr.emitting = true;
 
     }
     void FixedUpdate()
