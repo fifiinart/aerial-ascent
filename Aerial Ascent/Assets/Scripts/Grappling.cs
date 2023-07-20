@@ -50,24 +50,6 @@ public class Grappling : MonoBehaviour
                 hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
                 if (hit.transform.gameObject.layer == LayerMask.NameToLayer("ground") || hit.transform.gameObject.layer == LayerMask.NameToLayer("CanGrapple"))
                 {
-<<<<<<< HEAD
-
-                    StartGrappling();
-                }
-
-                //hit = Physics2D.Raycast(transform.position, lookDirection, distance, cannotGrappleMask);
-                //hit = Physics2D.Raycast(transform.position, lookDirection, distance, cannotGrappleMask);
-                //if (!hit)
-                //{
-                //    camShake.cameraShake();
-                //        hit = Physics2D.Raycast(transform.position, lookDirection, distance, groundMask);
-                //        if (hit)
-                //        {
-                //            StartGrappling();
-                //        }
-                    
-                //}
-=======
                     camShake.cameraShake();
                     StartGrappling();
                 }
@@ -81,7 +63,6 @@ public class Grappling : MonoBehaviour
 
                     }
                 }
->>>>>>> b9c4f0b1881c79338e0da37a421a166761d0a786
             }
 
 
