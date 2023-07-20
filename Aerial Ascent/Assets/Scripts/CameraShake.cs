@@ -5,40 +5,17 @@ using Cinemachine;
 
 public class CameraShake : MonoBehaviour
 {
-    public CinemachineVirtualCamera cam;
-    private CinemachineBasicMultiChannelPerlin noise;
-    public CinemachineBrain myCB;
+    private CinemachineVirtualCamera cam;
+    private CinemachineBrain myCB;
     public float shakeLeft = 0;
 
     public float time;
     public float amplitude;
-    /*    
 
-public IEnumerator Shake (float duration, float magnitude)
-    {
-        Vector3 originalPos = transform.localPosition;
-
-        float elapsed = 0.0f;
-
-        while (elapsed < duration)
-        {
-            float x = Random.Range(-1f, 1f) * magnitude;
-            float y = Random.Range(-1f, 1f) * magnitude;
-
-            transform.localPosition = new Vector3 (x, y, originalPos.z);
-
-            elapsed += Time.deltaTime;
-
-            yield return null;
-        }
-
-        transform.localPosition = originalPos;
-    }
-*/
     // Start is called before the first frame update
     void Start()
     {
-        
+        myCB = Camera.main.GetComponent<CinemachineBrain>();
     }
 
     // Update is called once per frame
@@ -47,20 +24,25 @@ public IEnumerator Shake (float duration, float magnitude)
         if (shakeLeft > 0)
         {
             shakeLeft -= Time.deltaTime;
-        } else
+        }
+        else
         {
-            cam = myCB.ActiveVirtualCamera as CinemachineVirtualCamera;
-            //myCB.ActiveVirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 0;
-            if (cam != null) { cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 0; }   
+            SetAmplitude(0f);
         }
     }
 
     public void cameraShake(bool on = true)
     {
-        cam = myCB.ActiveVirtualCamera as CinemachineVirtualCamera;
-        //myCB.ActiveVirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude;
-        if (cam != null) { cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude; }
+        SetAmplitude(amplitude);
         shakeLeft = time;
     }
 
+    private void SetAmplitude(float amplitude)
+    {
+        cam = myCB.ActiveVirtualCamera as CinemachineVirtualCamera;
+        if (cam != null) {
+            var perlin = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            perlin.m_AmplitudeGain = amplitude;
+        }
+    }
 }
