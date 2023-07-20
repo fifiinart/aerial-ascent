@@ -57,8 +57,7 @@ public class PlayerController : MonoBehaviour
     public float timeBeforeRespawn = 0.5f;
     private float respawnTimer = 0;
 
-    private Vector2 storedVel;
-
+    private bool inControl = false;
 
     void Start()
     {
@@ -87,7 +86,7 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        if (!gameOver)
+        if (!gameOver && inControl)
         {
             HandleCutJumps();
 
@@ -118,6 +117,12 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Dead", false);
     }
 
+    public void PlayerInControl()
+    {
+        print("player can move");
+        inControl = true;
+    }
+
     private void FlipPlayer()
     {
         if (grappling.isGrappling)
@@ -136,7 +141,7 @@ public class PlayerController : MonoBehaviour
     private float CalculateDampedVelocity()
     {
         float velocity = rb.velocity.x;
-        velocity += Input.GetAxisRaw("Horizontal");
+        velocity += inControl ? Input.GetAxisRaw("Horizontal") : 0f;
 
         if (grappling.isGrappling)
             velocity *= 1; // don't damp grapple
@@ -151,7 +156,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if ((bufferJumpTimer > 0) && (coyoteJumpTimer > 0))
+        if ((bufferJumpTimer > 0) && (coyoteJumpTimer > 0) && inControl)
         {
             bufferJumpTimer = 0;
             coyoteJumpTimer = 0;
@@ -165,7 +170,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleCutJumps()
     {
-        if (Input.GetButtonUp("Jump"))
+        if (Input.GetButtonUp("Jump") && inControl)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * cutJumpHeight);
         }
@@ -174,7 +179,7 @@ public class PlayerController : MonoBehaviour
     private void UpdateBufferJumpTimer()
     {
         bufferJumpTimer -= Time.fixedDeltaTime;
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && inControl)
         {
             bufferJumpTimer = bufferJumpTime;
         }
