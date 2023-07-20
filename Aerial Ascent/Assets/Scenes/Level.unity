@@ -567,6 +567,10 @@ PrefabInstance:
       propertyPath: camShake
       value: 
       objectReference: {fileID: 1126735334}
+    - target: {fileID: 6962461846790472076, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
+      propertyPath: OnCollect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 827531175}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
 --- !u!4 &174919097 stripped
