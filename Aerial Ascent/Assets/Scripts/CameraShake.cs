@@ -7,6 +7,7 @@ public class CameraShake : MonoBehaviour
 {
     public CinemachineVirtualCamera cam;
     private CinemachineBasicMultiChannelPerlin noise;
+    public CinemachineBrain myCB;
     public float shakeLeft = 0;
 
     public float time;
@@ -48,13 +49,17 @@ public IEnumerator Shake (float duration, float magnitude)
             shakeLeft -= Time.deltaTime;
         } else
         {
-            cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 0;
+            cam = myCB.ActiveVirtualCamera as CinemachineVirtualCamera;
+            //myCB.ActiveVirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 0;
+            if (cam != null) { cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 0; }   
         }
     }
 
     public void cameraShake(bool on = true)
     {
-        cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude;
+        cam = myCB.ActiveVirtualCamera as CinemachineVirtualCamera;
+        //myCB.ActiveVirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude;
+        if (cam != null) { cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude; }
         shakeLeft = time;
     }
 
