@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     
     public GameObject titleScreen;
     public bool isGameActive;
-    public PlayerController player;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +23,7 @@ public class GameManager : MonoBehaviour
     {
         isGameActive = true;
         titleScreen.SetActive(false);
+        PlayerInControl.Invoke();
     }
 
     // Update is called once per frame
