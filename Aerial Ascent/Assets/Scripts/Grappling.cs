@@ -7,21 +7,30 @@ public class Grappling : MonoBehaviour
 
     public float speed = 20f;
     public float distance = 10f;
+
     RaycastHit2D hit;
+
     public LayerMask groundMask;
     public LayerMask canGrappleMask;
     public LayerMask cannotGrappleMask;
-    public LineRenderer lineRenderer;
+
+    private LineRenderer lineRenderer;
+    private TrailRenderer tr;
     private Vector2 grapplingPos;
+
+    [HideInInspector]
     public bool isGrappling = false;
+    [HideInInspector]
     public float grappleAngle = 0f;
+    [HideInInspector]
     public float actualSpeed = 0f;
+    [HideInInspector]
     public Vector2 directionToGrapplePos;
+
     private Rigidbody2D rb;
     public bool inControl;
     private PlayerController playerController;
     public CameraShake camShake;
-    public TrailRenderer tr;
 
 
     // Start is called before the first frame update
