@@ -881,14 +881,6 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 306335099}
     m_ColliderPaths:
-    - - X: 3520000000
-        Y: 820000000
-      - X: 3100000000
-        Y: 820000000
-      - X: 3100000000
-        Y: 810000000
-      - X: 3520000000
-        Y: 810000000
     - - X: 3289999872
         Y: 621500032
       - X: 3289999872
@@ -939,10 +931,6 @@ CompositeCollider2D:
         Y: 600000000
   m_CompositePaths:
     m_Paths:
-    - - {x: 351.99997, y: 81}
-      - {x: 351.99997, y: 82}
-      - {x: 310, y: 81.99997}
-      - {x: 310.00003, y: 81}
     - - {x: 328.75, y: 62}
       - {x: 329, y: 62.150017}
       - {x: 329, y: 64.80001}
@@ -1231,7 +1219,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -13, y: -13, z: 0}
-  m_Size: {x: 360, y: 78, z: 1}
+  m_Size: {x: 360, y: 92, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
