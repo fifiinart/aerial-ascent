@@ -130,6 +130,9 @@ MonoBehaviour:
   coyoteJumpTime: 0.25
   onGround: 0
   cutJumpHeight: 0.5
+  canGrappleMask:
+    serializedVersion: 2
+    m_Bits: 256
   speed: 5
   horizontalDamping: 0.5
   stoppedDamping: 0.5
@@ -155,19 +158,21 @@ MonoBehaviour:
   distance: 15
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   canGrappleMask:
     serializedVersion: 2
-    m_Bits: 0
-  cannotGrapple:
+    m_Bits: 832
+  cannotGrappleMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   lineRenderer: {fileID: 0}
   isGrappling: 0
   grappleAngle: 0
   actualSpeed: 0
   directionToGrapplePos: {x: 0, y: 0}
   inControl: 0
+  camShake: {fileID: 0}
+  tr: {fileID: 0}
 --- !u!50 &3071925375986180502
 Rigidbody2D:
   serializedVersion: 4
