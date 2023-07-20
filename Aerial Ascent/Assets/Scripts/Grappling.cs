@@ -48,20 +48,11 @@ public class Grappling : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && isGrappling == false && inControl)
             {
                 hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
-                if (hit.transform.gameObject.layer == LayerMask.NameToLayer("ground") || hit.transform.gameObject.layer == LayerMask.NameToLayer("CanGrapple"))
+
+                if (hit && (hit.transform.gameObject.layer == LayerMask.NameToLayer("ground") || hit.transform.gameObject.layer == LayerMask.NameToLayer("CanGrapple")))
                 {
                     camShake.cameraShake();
                     StartGrappling();
-                }
-                else
-                {
-                    hit = Physics2D.Raycast(transform.position, lookDirection, distance, groundMask);
-                    if (hit)
-                    {
-                        StartGrappling();
-                        camShake.cameraShake();
-
-                    }
                 }
             }
 

@@ -752,12 +752,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleScreen: {fileID: 907242460}
   isGameActive: 0
-  player: {fileID: 174919104}
   PlayerInControl:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 174919103}
         m_TargetAssemblyTypeName: Grappling, Assembly-CSharp
+        m_MethodName: PlayerInControl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 174919104}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: PlayerInControl
         m_Mode: 1
         m_Arguments:
@@ -1999,21 +2010,9 @@ CompositeCollider2D:
   m_EdgeRadius: 0
   m_ColliderPaths:
   - m_Collider: {fileID: 1558304379}
-    m_ColliderPaths:
-    - - X: -40000000
-        Y: 50000000
-      - X: -41500000
-        Y: 50000000
-      - X: -41500000
-        Y: 0
-      - X: -40000000
-        Y: 0
+    m_ColliderPaths: []
   m_CompositePaths:
-    m_Paths:
-    - - {x: -4.000029, y: 0}
-      - {x: -4.000029, y: 5}
-      - {x: -4.15, y: 4.999971}
-      - {x: -4.149971, y: 0}
+    m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &1558304381
@@ -2165,22 +2164,22 @@ Tilemap:
   m_TileMatrixArray:
   - m_RefCount: 0
     m_Data:
-      e00: 0
+      e00: 1.0841987e+32
       e01: 0
       e02: 4.7500076
       e03: 4.7500076
-      e10: 0
+      e10: 6.05e-43
       e11: 0
       e12: 6.05e-43
       e13: 6.05e-43
       e20: 1.1981298e-25
       e21: 1e-45
-      e22: -2.3640098e-19
-      e23: -1355.2168
+      e22: -3.003743e-19
+      e23: -2.051365
       e30: 4.5905e-41
       e31: 0
       e32: 6.05e-43
-      e33: 6.05e-43
+      e33: 6.08e-43
   m_TileColorArray:
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
