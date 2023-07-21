@@ -57,8 +57,9 @@ public class PlayerController : MonoBehaviour
     public Vector2 spawnPosition = Vector2.zero;
     public float timeBeforeRespawn = 0.5f;
     private float respawnTimer = 0;
-
+    public AudioClip deathSound;
     private bool inControl = false;
+    public AudioSource aud;
 
     void Start()
     {
@@ -285,10 +286,14 @@ public class PlayerController : MonoBehaviour
 
     private void KillPlayer()
     {
-        if (!gameOver) respawnTimer = timeBeforeRespawn;
+        if (!gameOver) 
+        {
+        respawnTimer = timeBeforeRespawn;
+        aud.PlayOneShot(deathSound, 1f);
         gameOver = true;
         rb.velocity = new Vector2(0, 0);
         anim.SetBool("Dead", true);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
