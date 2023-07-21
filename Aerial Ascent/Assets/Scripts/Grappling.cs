@@ -99,9 +99,9 @@ public class Grappling : MonoBehaviour
         }
     }
 
-    public void PlayerInControl()
+    public void PlayerInControl(bool change)
     {
-        inControl = true;
+        inControl = change;
 
     }
 

@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     
     public GameObject titleScreen;
     public GameObject endScreen;
+    public GameObject grappleIndicator;
+    public Grappling grappling;
     public bool isGameActive;
     public TextMeshProUGUI speedrunTimerText;
     public bool timerEnabled = false;
@@ -29,6 +31,7 @@ public class GameManager : MonoBehaviour
         titleScreen.SetActive(false);
         PlayerInControl.Invoke();
         timerActive = true;
+        grappleIndicator.SetActive(true);
     }
 
     public void Win()
@@ -65,8 +68,10 @@ public class GameManager : MonoBehaviour
 
     public void ShowEndscreen()
     {
+        grappling.PlayerInControl(false);
         Time.timeScale = 0;
         endScreen.SetActive(true);
+        grappleIndicator.SetActive(false);
     }
     public void RestartGame()
     {

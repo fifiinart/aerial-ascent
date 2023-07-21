@@ -127,6 +127,7 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerInControl()
     {
+        Time.timeScale = 1;
         inControl = true;
     }
 
