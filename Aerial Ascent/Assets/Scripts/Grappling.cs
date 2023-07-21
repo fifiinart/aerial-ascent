@@ -27,6 +27,9 @@ public class Grappling : MonoBehaviour
     [HideInInspector]
     public Vector2 directionToGrapplePos;
 
+    [HideInInspector]
+    public Vector2 lookDirection;
+
     private Rigidbody2D rb;
     public bool inControl;
     private PlayerController playerController;
@@ -48,13 +51,13 @@ public class Grappling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        lookDirection = (mousePos - (Vector2)transform.position).normalized;
+
         if (!playerController.gameOver)
         {
             //get mouse pos
             //get look direction
-
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 lookDirection = (mousePos - (Vector2)transform.position).normalized;
 
             Debug.DrawRay(transform.position, lookDirection);
 
@@ -85,8 +88,6 @@ public class Grappling : MonoBehaviour
     }
     public bool CanGrapple()
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 lookDirection = (mousePos - (Vector2)transform.position).normalized;
         hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
 
         if (hit && (hit.transform.gameObject.layer == LayerMask.NameToLayer("ground") || hit.transform.gameObject.layer == LayerMask.NameToLayer("CanGrapple")))
