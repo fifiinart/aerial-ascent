@@ -83,6 +83,20 @@ public class Grappling : MonoBehaviour
             }
         }
     }
+    public bool CanGrapple()
+    {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 lookDirection = (mousePos - (Vector2)transform.position).normalized;
+        hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
+
+        if (hit && (hit.transform.gameObject.layer == LayerMask.NameToLayer("ground") || hit.transform.gameObject.layer == LayerMask.NameToLayer("CanGrapple")))
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
 
     public void PlayerInControl()
     {
