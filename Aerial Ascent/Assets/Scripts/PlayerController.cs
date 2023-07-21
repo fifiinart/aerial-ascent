@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public LayerMask canGrappleMask;
     public float speed = 1;
+    private bool facingRight = true;
 
     // How much momentum should be preserved within 10 seconds
     [Range(0, 1)]
@@ -140,14 +141,20 @@ public class PlayerController : MonoBehaviour
     {
         if (grappling.isGrappling)
         {
-            float y = grappling.directionToGrapplePos.x < 0 ? 180f : 0f;
-            float z = Mathf.Rad2Deg * Mathf.Atan2(grappling.directionToGrapplePos.y, Mathf.Abs(grappling.directionToGrapplePos.x));
+            float angle = Mathf.Rad2Deg * Mathf.Atan2(grappling.directionToGrapplePos.y, grappling.directionToGrapplePos.x);
 
-            sprite.rotation = Quaternion.Euler(0, y, z);
+            if (angle > 90 || angle < -90)
+            {
+                sprite.rotation = Quaternion.Euler(0, 180, -(angle - 90) + 90);
+            }
+            else
+            {
+                sprite.rotation = Quaternion.Euler(0, 0, angle);
+            }
         }
         else
         {
-            sprite.rotation = Quaternion.Euler(0, (float)(Input.GetAxisRaw("Horizontal") < 0.01f ? 180f : 0f), 0);
+            sprite.rotation = Quaternion.Euler(0, facingRight ? 0f : 180f, 0);
         }
     }
 
@@ -155,6 +162,8 @@ public class PlayerController : MonoBehaviour
     {
         float velocity = rb.velocity.x;
         velocity += inControl ? Input.GetAxisRaw("Horizontal") : 0f;
+        if (Input.GetAxisRaw("Horizontal") > 0.05) facingRight = true;
+        if (Input.GetAxisRaw("Horizontal") < -0.05) facingRight = false;
 
         if (grappling.isGrappling)
             velocity *= 1; // don't damp grapple
