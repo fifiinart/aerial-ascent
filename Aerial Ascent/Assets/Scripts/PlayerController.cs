@@ -125,8 +125,12 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerInControl()
     {
-        print("player can move");
         inControl = true;
+    }
+
+    public void PlayerWin()
+    {
+        //...
     }
 
     private void FlipPlayer()
