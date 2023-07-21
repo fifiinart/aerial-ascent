@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class Grappling : MonoBehaviour
@@ -46,13 +47,13 @@ public class Grappling : MonoBehaviour
         playerController = GetComponent<PlayerController>();
         tr = GetComponent<TrailRenderer>();
         grappleSound = GetComponent<AudioSource>();
+
+        CinemachineCore.CameraUpdatedEvent.AddListener(RaycastToMousePos);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        lookDirection = (mousePos - (Vector2)transform.position).normalized;
 
         if (!playerController.gameOver)
         {
@@ -86,6 +87,13 @@ public class Grappling : MonoBehaviour
             }
         }
     }
+
+    public void RaycastToMousePos(CinemachineBrain cb)
+    {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        lookDirection = (mousePos - (Vector2)transform.position).normalized;
+    }
+
     public bool CanGrapple()
     {
         hit = Physics2D.Raycast(transform.position, lookDirection, distance, canGrappleMask);
