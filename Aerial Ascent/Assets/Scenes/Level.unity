@@ -575,6 +575,10 @@ PrefabInstance:
       propertyPath: camShake
       value: 
       objectReference: {fileID: 1126735334}
+    - target: {fileID: 3071925375986180525, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ad1ba4e30a5574144917701739378365, type: 2}
     - target: {fileID: 6962461846790472076, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
       propertyPath: OnCollect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
