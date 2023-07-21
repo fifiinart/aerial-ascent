@@ -1771,6 +1771,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e33e134c4ce1dfc47ab225ae39c5f8b7, type: 3}
+--- !u!1 &548007773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2018663416544506450, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
+  m_PrefabInstance: {fileID: 174919096}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &564264131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3203,6 +3208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleScreen: {fileID: 10718767}
   endScreen: {fileID: 736250724}
+  grappleIndicator: {fileID: 548007773}
   grappling: {fileID: 174919103}
   isGameActive: 0
   speedrunTimerText: {fileID: 1277329933}
