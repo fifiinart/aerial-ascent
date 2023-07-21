@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
     [Header("Bounce")]
     public float minHorizontalBounce = 40f;
     public float minVerticalBounce = 30f;
+    public AudioClip bounceSound;
 
     [Header("Game Over")]
     public bool gameOver = false;
@@ -233,6 +234,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Bouncy"))
         {
             HandleBounce(collision);
+            aud.PlayOneShot(bounceSound, 1f);
         }
         else if (collision.gameObject.CompareTag("Deadly"))
         {

@@ -520,16 +520,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 174919111}
     - target: {fileID: 3071925375986180503, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
+      propertyPath: bounce
+      value: 
+      objectReference: {fileID: 8300000, guid: b62c693603004e34a8a0cb3be8c86b95, type: 3}
+    - target: {fileID: 3071925375986180503, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
       propertyPath: deathSound
       value: 
       objectReference: {fileID: 8300000, guid: e4209f3a52defae46b49c6f1a2498535, type: 3}
     - target: {fileID: 3071925375986180503, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
+      propertyPath: bounceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b62c693603004e34a8a0cb3be8c86b95, type: 3}
+    - target: {fileID: 3071925375986180503, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
       propertyPath: spawnPosition.x
-      value: 308.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3071925375986180503, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
       propertyPath: spawnPosition.y
-      value: 156.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3071925375986180515, guid: d11aa70b444f148459d722c2446cbb0a, type: 3}
       propertyPath: m_Name
