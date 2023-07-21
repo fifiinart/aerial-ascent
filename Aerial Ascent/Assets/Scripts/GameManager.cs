@@ -55,6 +55,8 @@ public class GameManager : MonoBehaviour
             speedrunTimerText.text = GenerateTimeString();
         }
 
+        if (Input.GetKeyDown(KeyCode.R) && timerEnabled) RestartGame(); 
+
     }
 
     private string GenerateTimeString()
