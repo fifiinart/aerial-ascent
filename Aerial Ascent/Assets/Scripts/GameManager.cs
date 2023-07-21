@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject endScreen;
     public bool isGameActive;
     public TextMeshProUGUI speedrunTimerText;
+    public bool timerEnabled = false;
     public bool timerActive = false;
     private float timer = 0f;
     
@@ -27,24 +28,30 @@ public class GameManager : MonoBehaviour
         isGameActive = true;
         titleScreen.SetActive(false);
         PlayerInControl.Invoke();
+        timerActive = true;
     }
 
     public void Win()
     {
         timerActive = false;
-        speedrunTimerText.color = Color.green;
+        speedrunTimerText.gameObject.SetActive(true);
+        if (timerEnabled) speedrunTimerText.color = Color.green;
     }
 
     public void SetupSpeedrunTimer()
     {
-        timerActive = true;
+        timerEnabled = true;
         speedrunTimerText.gameObject.SetActive(true);
     }
 
     private void Update()
     {
-        timer += Time.deltaTime;
-        if (timerActive) speedrunTimerText.text = GenerateTimeString();
+        if (timerActive)
+        {
+            timer += Time.deltaTime;
+            speedrunTimerText.text = GenerateTimeString();
+        }
+
     }
 
     private string GenerateTimeString()
