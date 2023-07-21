@@ -2,16 +2,19 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     
     public GameObject titleScreen;
+    public GameObject endScreen;
     public bool isGameActive;
     public TextMeshProUGUI speedrunTimerText;
     public bool timerEnabled = false;
     public bool timerActive = false;
     private float timer = 0f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +61,16 @@ public class GameManager : MonoBehaviour
         int seconds = Math.DivRem(temp, 1000, out int ms);
 
         return $"{minutes:D2}:{seconds:D2}.{ms:D3}"; // xx:xx.xxx format
+    }
+
+    public void ShowEndscreen()
+    {
+        Time.timeScale = 0;
+        endScreen.SetActive(true);
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void QuitGame()
