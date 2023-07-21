@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
         if (grappling.isGrappling)
         {
             float y = grappling.directionToGrapplePos.x < 0 ? 180f : 0f;
-            float z = grappling.grappleAngle;
+            float z = Mathf.Rad2Deg * Mathf.Atan2(grappling.directionToGrapplePos.y, Mathf.Abs(grappling.directionToGrapplePos.x));
 
             sprite.rotation = Quaternion.Euler(0, y, z);
         }
