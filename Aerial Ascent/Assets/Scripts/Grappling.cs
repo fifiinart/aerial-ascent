@@ -31,6 +31,7 @@ public class Grappling : MonoBehaviour
     public bool inControl;
     private PlayerController playerController;
     public CameraShake camShake;
+    public AudioSource grappleSound;
 
 
     // Start is called before the first frame update
@@ -41,6 +42,7 @@ public class Grappling : MonoBehaviour
         inControl = false;
         playerController = GetComponent<PlayerController>();
         tr = GetComponent<TrailRenderer>();
+        grappleSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -64,6 +66,7 @@ public class Grappling : MonoBehaviour
                 {
                     camShake.cameraShake();
                     StartGrappling();
+                    grappleSound.Play();
                 }
             }
 
